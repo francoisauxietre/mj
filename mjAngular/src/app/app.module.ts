@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PostitComponent } from './postit/postit.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {DraggableModalComponent} from './modal/draggable-modal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PostitComponent
+    PostitComponent,
+    DraggableModalComponent
   ],
   imports: [
     BrowserModule,
@@ -17,6 +19,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     NgbModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [DraggableModalComponent]
 })
 export class AppModule { }

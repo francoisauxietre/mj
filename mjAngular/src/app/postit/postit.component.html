@@ -1,5 +1,15 @@
 <p>postit works!</p>
 <button type="button" (click)="addPostButton" class="btn btn-primary">Add Postit</button>
+<div class="row">
+  <div class="col-md-12">
+    <button type="button" (click)="openModal()" class="btn btn-sm btn-primary" style="margin: 20px;">
+      {{buttonText}}
+    </button>
+  </div>
+</div>
+
+
+
 <div class="modal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
