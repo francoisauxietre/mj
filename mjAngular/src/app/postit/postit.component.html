@@ -1,0 +1,20 @@
+<p>postit works!</p>
+<button type="button" (click)="addPostButton" class="btn btn-primary">Add Postit</button>
+<div *ngFor="let postIt of postIts">
+  <ul>
+    <li>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">postIt.title</h5>
+          <p class="card-text">postIt.text</p>
+          <a href="#" class="btn btn-primary">Edit</a>
+        </div>
+      </div>
+    </li>
+
+  </ul>
+
+
+</div>
+

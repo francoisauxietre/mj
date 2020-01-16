@@ -1,11 +1,19 @@
-# MjAngular
+# MjAngular documentation mise a jour en fonction de l'avancement du projet
 
 cordova run browser
 cordova run android 
-bien penser a mettre ES5
+bien penser a mettre ES5 pour builder sinon rien ne marche
 dans index html mettre   <script type="text/javascript" src="cordova.js"></script>
 log emulateur 
 build wwww
+
+
+installation du premier plugin permettant d'avoir des liens pour des url dans un autre browser
+<pre><code>cordova plugin add cordova-plugin-inappbrowser</code></pre>
+resultat
+Installing "cordova-plugin-inappbrowser" for android
+Installing "cordova-plugin-inappbrowser" for browser
+Adding cordova-plugin-inappbrowser to package.json
 
 et mis dans mle main.ts 
 let onDeviceReady = () => {
@@ -17,6 +25,8 @@ document.addEventListener('deviceready', onDeviceReady, false);
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
 
+pour arriver a compiler dans le dossier de cordova au lieu du classique dist
+ng build --prod --base-href . --output-path ../CordovaMobileApp/www/
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
