@@ -11,5 +11,7 @@ export class FormulairePostItComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  onSubmit(value: any) {
+    console.log(value);
+  }
 }

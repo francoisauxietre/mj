@@ -22,10 +22,10 @@ export class PostitComponent implements OnInit {
   openModal() {
     this.modalRef = this.modalService.open(DraggableModalComponent, this.modalOptions);
     this.modalRef.componentInstance.title = 'Drag Me!';
-    this.modalRef.componentInstance.message = 'Try dragging this modal around using the modal header!';
+    this.modalRef.componentInstance.message = '';
     this.modalRef.componentInstance.onSubmitSubject
       .subscribe((res: boolean) => {
-        this.buttonText = 'Open Modal Again!';
+        this.buttonText = 'Open Post-it';
       });
   }
 

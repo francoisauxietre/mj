@@ -22,9 +22,10 @@ export class DraggableModalComponent implements OnInit {
 
   ngOnInit() {
 
-    $(document).ready(function(){
-      let modalContent: any = $('.modal-content');
-      let modalHeader = $('.modal-header');
+    // tslint:disable-next-line:only-arrow-functions
+    $(document).ready(function() {
+      const modalContent: any = $('.modal-content');
+      const modalHeader = $('.modal-header');
       modalHeader.addClass('cursor-all-scroll');
       modalContent.draggable({
           handle: '.modal-header'

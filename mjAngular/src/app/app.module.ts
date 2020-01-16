@@ -7,6 +7,7 @@ import { PostitComponent } from './postit/postit.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {DraggableModalComponent} from './modal/draggable-modal.component';
 import { FormulairePostItComponent } from './formulaire-post-it/formulaire-post-it.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FormulairePostItComponent } from './formulaire-post-it/formulaire-post-
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

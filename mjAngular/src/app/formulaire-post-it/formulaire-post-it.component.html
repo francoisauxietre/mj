@@ -1,1 +1,30 @@
 <p>formulaire-post-it works!</p>
+<div class="container">
+  <h2>Form Data</h2>
+
+  <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" class="form-control" name="name" ngModel>
+    </div><br/>
+    <div ngModelGroup="address">
+      <div class="form-group">
+        <label>City</label>
+        <input type="text" class="form-control" name="city" ngModel>
+      </div><br/>
+      <div class="form-group">
+        <label>Pin</label>
+        <input type="text" class="form-control" name="pin" ngModel>
+      </div><br/>
+      <div class="form-group">
+        <label>State</label>
+        <input type="text" class="form-control" name="state" ngModel>
+      </div><br/>
+
+    </div>
+    <button type="submit" class="btn btn-primary" >Submit</button>
+
+
+
+  </form>
+</div>
