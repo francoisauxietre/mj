@@ -8,6 +8,7 @@ import {PostIt} from '../../model/PostIt';
 })
 export class PostitComponent implements OnInit {
   private postIts: Array<PostIt>;
+  private test: boolean;
 
   constructor() { }
 
@@ -18,5 +19,6 @@ export class PostitComponent implements OnInit {
     const post = new PostIt();
     this.postIts.push(post);
     console.log(this.postIts[0]);
+    this.test = true;
   }
 }
