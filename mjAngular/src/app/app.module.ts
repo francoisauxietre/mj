@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { PostitComponent } from './postit/postit.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {DraggableModalComponent} from './modal/draggable-modal.component';
+import { FormulairePostItComponent } from './formulaire-post-it/formulaire-post-it.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostitComponent,
-    DraggableModalComponent
+    DraggableModalComponent,
+    FormulairePostItComponent
   ],
   imports: [
     BrowserModule,
