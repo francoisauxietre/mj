@@ -7,8 +7,8 @@ import {PostIt} from '../../model/PostIt';
   styleUrls: ['./postit.component.css']
 })
 export class PostitComponent implements OnInit {
-  private postIts: Array<PostIt>;
-  private test: boolean;
+  postIts: Array<PostIt>;
+  test: boolean;
 
   constructor() { }
 
