@@ -1,7 +1,13 @@
 # MjAngular documentation mise a jour en fonction de l'avancement du projet
+# readme by Francois Auxietre pour l'ensemble du projet de mes installations
+Attention les imports sdk jdk etc et challenge pour bien definir les variables d'environnement et $PATH
+verfifier ses version avec java et javac les deux 1.8 sdk
 
+#compilation dans un browser
 cordova run browser
+#compilation sous emulateur
 cordova run android 
+##remarques sinon rien ne marche
 bien penser a mettre ES5 pour builder sinon rien ne marche
 dans index html mettre   <script type="text/javascript" src="cordova.js"></script>
 log emulateur 
@@ -14,6 +20,16 @@ resultat
 Installing "cordova-plugin-inappbrowser" for android
 Installing "cordova-plugin-inappbrowser" for browser
 Adding cordova-plugin-inappbrowser to package.json
+
+installation du plugin camera
+<pre><code>cordova plugin add cordova-plugin-camera</code></pre>
+
+
+Installing "cordova-plugin-camera" for android
+Subproject Path: CordovaLib
+Subproject Path: app
+Installing "cordova-plugin-camera" for browser
+Adding cordova-plugin-camera to package.json
 
 et mis dans mle main.ts 
 let onDeviceReady = () => {

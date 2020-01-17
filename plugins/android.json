@@ -12,6 +12,10 @@
     },
     "cordova-plugin-inappbrowser": {
       "PACKAGE_NAME": "com.froxworld.mj"
+    },
+    "cordova-plugin-camera": {
+      "ANDROID_SUPPORT_V4_VERSION": "27.+",
+      "PACKAGE_NAME": "com.froxworld.mj"
     }
   },
   "dependent_plugins": {}
