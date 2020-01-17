@@ -10,7 +10,7 @@ import {DraggableModalComponent} from '../modal/draggable-modal.component';
   styleUrls: ['./postit.component.css']
 })
 export class PostitComponent implements OnInit {
-  postIts: Array<PostIt>;
+  postIts: PostIt[] = [];
   test: boolean;
   buttonText = 'Open Modal';
 
@@ -22,7 +22,7 @@ export class PostitComponent implements OnInit {
   openModal() {
     this.modalRef = this.modalService.open(DraggableModalComponent, this.modalOptions);
     this.modalRef.componentInstance.title = 'Drag Me!';
-    this.modalRef.componentInstance.message = '';
+    this.modalRef.componentInstance.message = 'test';
     this.modalRef.componentInstance.onSubmitSubject
       .subscribe((res: boolean) => {
         this.buttonText = 'Open Post-it';
@@ -35,6 +35,9 @@ export class PostitComponent implements OnInit {
 
   addPostButton() {
     const post = new PostIt();
+    post.id = 1;
+    post.text = 'test';
+    post.title = 'titre';
     this.postIts.push(post);
     console.log(this.postIts[0]);
     this.test = true;
