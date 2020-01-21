@@ -8,13 +8,15 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {DraggableModalComponent} from './modal/draggable-modal.component';
 import { FormulairePostItComponent } from './formulaire-post-it/formulaire-post-it.component';
 import {FormsModule} from '@angular/forms';
+import { TimeLineComponent } from './time-line/time-line.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostitComponent,
     DraggableModalComponent,
-    FormulairePostItComponent
+    FormulairePostItComponent,
+    TimeLineComponent
   ],
   imports: [
     BrowserModule,
