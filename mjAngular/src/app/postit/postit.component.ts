@@ -42,4 +42,8 @@ export class PostitComponent implements OnInit {
     console.log(this.postIts[0]);
     this.test = true;
   }
+
+  removePostButton(){
+
+  }
 }
