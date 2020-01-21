@@ -9,6 +9,16 @@ import {DraggableModalComponent} from './modal/draggable-modal.component';
 import { FormulairePostItComponent } from './formulaire-post-it/formulaire-post-it.component';
 import {FormsModule} from '@angular/forms';
 import { TimeLineComponent } from './time-line/time-line.component';
+import {
+  MdToolbarModule,
+  MdTabsModule,
+  MdButtonModule,
+  MdInputModule,
+  MdDatepickerModule,
+  MdNativeDateModule,
+  MdCheckboxModule,
+  MdRadioModule
+} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -22,8 +32,15 @@ import { TimeLineComponent } from './time-line/time-line.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FormsModule
-  ],
+    FormsModule,
+    MdToolbarModule,
+    MdTabsModule,
+    MdButtonModule,
+    MdInputModule,
+    MdDatepickerModule,
+    MdNativeDateModule,
+    MdCheckboxModule,
+    MdRadioModule],
   providers: [],
   bootstrap: [AppComponent],
   entryComponents: [DraggableModalComponent]
