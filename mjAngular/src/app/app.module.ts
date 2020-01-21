@@ -9,6 +9,7 @@ import {DraggableModalComponent} from './modal/draggable-modal.component';
 import { FormulairePostItComponent } from './formulaire-post-it/formulaire-post-it.component';
 import {FormsModule} from '@angular/forms';
 import { TimeLineComponent } from './time-line/time-line.component';
+import { NavComponent } from './nav/nav.component';
 // import {
 //   // MdToolbarModule,
 //   // MdTabsModule,
@@ -26,7 +27,8 @@ import { TimeLineComponent } from './time-line/time-line.component';
     PostitComponent,
     DraggableModalComponent,
     FormulairePostItComponent,
-    TimeLineComponent
+    TimeLineComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
