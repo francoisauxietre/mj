@@ -10,6 +10,7 @@ import { FormulairePostItComponent } from './formulaire-post-it/formulaire-post-
 import {FormsModule} from '@angular/forms';
 import { TimeLineComponent } from './time-line/time-line.component';
 import { NavComponent } from './nav/nav.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import {
 //   // MdToolbarModule,
 //   // MdTabsModule,
@@ -35,6 +36,7 @@ import { NavComponent } from './nav/nav.component';
     AppRoutingModule,
     NgbModule,
     FormsModule,
+    BrowserAnimationsModule,
     // MdToolbarModule,
     // MdTabsModule,
     // MdButtonModule,
