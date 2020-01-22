@@ -13,6 +13,8 @@ import { NavComponent } from './nav/nav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonToggleModule, MatToolbarModule} from '@angular/material';
 import { CarteComponent } from './carte/carte.component';
+import {GenerateurComponent} from './generateur/generateur.component';
+
 // import {
 //   // MdToolbarModule,
 //   // MdTabsModule,
@@ -32,7 +34,8 @@ import { CarteComponent } from './carte/carte.component';
     FormulairePostItComponent,
     TimeLineComponent,
     NavComponent,
-    CarteComponent
+    CarteComponent,
+    GenerateurComponent
   ],
   imports: [
     BrowserModule,
