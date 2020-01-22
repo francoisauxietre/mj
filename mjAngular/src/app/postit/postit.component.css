@@ -6,3 +6,8 @@
 .card-header {
     width: 100%;
 }
+
+.example-handle {
+    display: inline;
+    float: right;
+}
