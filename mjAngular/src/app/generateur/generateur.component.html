@@ -1,6 +1,14 @@
 <p>generateur works!</p>
-<form>
-  <input type="number" />D<input type="number"/><br>
-  <input type=button text="Générer" (click)="submitgenerateur"/>
-</form>
+<div>
+  <input type="number" value="1" min="1" [(ngModel)]="nbDe" name="nbDe" />D
+  <select [(ngModel)]="selectDe" name="selectDe" >
+    <option *ngFor="let de of listDe">{{de}}</option>
+  </select><br>
+  <button (click)="onSubmit()">Générer</button>
+</div>
+<div>
+  <p>Valeurs de dés:</p><textarea [(ngModel)]="listValue" name="listValue" disabled></textarea>
+  <p>Total:</p><textarea [(ngModel)]="total" name="total" disabled></textarea>
+</div>
+
 

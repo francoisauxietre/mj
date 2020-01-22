@@ -7,13 +7,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GenerateurComponent implements OnInit {
 
-  constructor() { }
+  listDe = [4,6,8,10,12,20,100];
+  total: number;
+  selectDe: number;
+  nbDe: number;
+  listValue : String ="";
+
+  constructor() {
+
+   }
 
   ngOnInit() {
   }
 
-  submitgenerateur(){
+  onSubmit(){
 
+    let i = this.nbDe;
+    this.total = 0;
+    this.listValue = "";
+    while(i>0){
+      let value = (Math.floor(Math.random()*this.selectDe)+1);
+      this.total = this.total + value;
+      this.listValue += ", [" + value.toString() + "]";
+      i--;
+    }
+    console.log(this.listValue);
   }
 
 }
