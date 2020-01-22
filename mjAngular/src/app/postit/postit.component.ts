@@ -22,7 +22,7 @@ export class PostitComponent implements OnInit {
   openModal() {
     this.modalRef = this.modalService.open(DraggableModalComponent, this.modalOptions);
     this.modalRef.componentInstance.title = 'Drag Me!';
-    this.modalRef.componentInstance.message = 'test';
+    this.modalRef.componentInstance.message = 'test blablablablablabla';
     this.modalRef.componentInstance.onSubmitSubject
       .subscribe((res: boolean) => {
         this.buttonText = 'Open Post-it';
@@ -36,7 +36,7 @@ export class PostitComponent implements OnInit {
   addPostButton() {
     const post = new PostIt();
     post.id = 1;
-    post.text = 'test';
+    post.text = 'test blablablablablablabla';
     post.title = 'titre';
     this.postIts.push(post);
     console.log(this.postIts[0]);

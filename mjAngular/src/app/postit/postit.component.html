@@ -1,14 +1,19 @@
 <p>postit works!</p>
 
 
-<div *ngFor="let postIt of postIts">
+<div *ngFor="let postIt of postIts" class="row">
   <ul>
     <li>
-      <div class="postit">
-        <h5 class="card-title">{{postIt.title}}</h5>
-        <p class="card-text">{{postIt.text}}</p>
-        <a href="#" class="btn btn-primary">Edit</a>
-        <button type="button" (click)="removePostButton()" class="btn btn-primary">Remove</button>
+      <div class="card">
+        <div class="card-header">
+          {{postIt.title}}
+        </div>
+        <div class="card-body">
+          <!--<h5 class="card-title">{{postIt.title}}</h5>-->
+          <p class="card-text">{{postIt.text}}</p>
+          <!--<a href="#" class="btn btn-primary">Edit</a>-->
+          <button type="button" (click)="removePostButton()" class="btn btn-primary">Remove</button>
+        </div>
       </div>
     </li>
   </ul>
