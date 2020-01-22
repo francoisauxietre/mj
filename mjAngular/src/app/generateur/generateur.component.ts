@@ -22,16 +22,20 @@ export class GenerateurComponent implements OnInit {
 
   onSubmit(){
 
-    let i = this.nbDe;
-    this.total = 0;
-    this.listValue = "";
-    while(i>0){
-      let value = (Math.floor(Math.random()*this.selectDe)+1);
-      this.total = this.total + value;
-      this.listValue += ", [" + value.toString() + "]";
-      i--;
+    if(this.nbDe!=null && this.selectDe!=null){
+      let i = this.nbDe;
+      this.total = 0;
+      this.listValue = "";
+      while(i>0){
+        let value = (Math.floor(Math.random()*this.selectDe)+1);
+        this.total = this.total + value;
+        this.listValue += "[" + value.toString() + "] ";
+        i--;
+      }
+    } else {
+      //TODO Message d'erreur
     }
-    console.log(this.listValue);
+
   }
 
 }
