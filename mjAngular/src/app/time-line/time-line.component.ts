@@ -5,42 +5,58 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './time-line.component.html',
   styleUrls: ['./time-line.component.css']
 })
-export class TimeLineComponent  {
+export class TimeLineComponent implements OnInit{
 
   constructor() { }
-  alternate: boolean = true;
-  toggle: boolean = true;
-  color: boolean = false;
-  size: number = 40;
-  expandEnabled: boolean = true;
+  nunmberEntries = 0;
+  alternate: true;
+  toggle: true;
+  color: false;
+  size: 40;
+  show: boolean = false;
   side = 'left';
 
   entries = [
     {
       header: 'header',
-      content: 'content'
+      content: 'content',
+      number: 'number'
     }
   ]
 
+  ngOnInit(): void {
+    console.log('test');
+  }
+
   addEntry() {
+    this.nunmberEntries++;
     this.entries.push({
       header: 'header',
-      content: 'content'
-    })
+      content: 'content',
+      number: this.nunmberEntries.toString()
+    });
   }
 
   removeEntry() {
+    if (this.nunmberEntries > 0) {
+      this.nunmberEntries--;
+    }
     this.entries.pop();
   }
 
   onHeaderClick(event) {
-    if (!this.expandEnabled) {
-      event.stopPropagation();
+    if (!this.show) {
+        this.show = true;
+        event.stopPropagation();
+      } else {
+        this.show = false;
     }
+
+    console.log('expension');
   }
 
   onDotClick(event) {
-    if (!this.expandEnabled) {
+    if (!this.show) {
       event.stopPropagation();
     }
   }

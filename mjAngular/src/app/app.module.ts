@@ -11,6 +11,7 @@ import {FormsModule} from '@angular/forms';
 import { TimeLineComponent } from './time-line/time-line.component';
 import { NavComponent } from './nav/nav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonToggleModule, MatToolbarModule} from '@angular/material';
 // import {
 //   // MdToolbarModule,
 //   // MdTabsModule,
@@ -37,6 +38,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NgbModule,
     FormsModule,
     BrowserAnimationsModule,
+    MatToolbarModule,
+    MatButtonToggleModule,
     // MdToolbarModule,
     // MdTabsModule,
     // MdButtonModule,
@@ -45,7 +48,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     // MdNativeDateModule,
     // MdCheckboxModule,
     // MdRadioModule
-    ],
+  ],
   providers: [],
   bootstrap: [AppComponent],
   entryComponents: [DraggableModalComponent]
