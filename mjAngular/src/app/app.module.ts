@@ -15,6 +15,8 @@ import {MatButtonToggleModule, MatToolbarModule} from '@angular/material';
 import { CarteComponent } from './carte/carte.component';
 import {GenerateurComponent} from './generateur/generateur.component';
 
+import {DragDropModule} from '@angular/cdk/drag-drop';
+
 // import {
 //   // MdToolbarModule,
 //   // MdTabsModule,
@@ -41,6 +43,7 @@ import {GenerateurComponent} from './generateur/generateur.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    DragDropModule,
     FormsModule,
     BrowserAnimationsModule,
     MatToolbarModule,

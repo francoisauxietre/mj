@@ -1,23 +1,30 @@
 <div class="row">
   <div *ngFor="let postIt of postIts">
-        <div class="card" style="width: 18rem;">
-          <div class="card-header">
-            {{postIt.title}}
-          </div>
-          <div class="card-body">
-            <!--<h5 class="card-title">{{postIt.title}}</h5>-->
-            <p class="card-text">{{postIt.text}}</p>
-            <!--<a href="#" class="btn btn-primary">Edit</a>-->
-            <button type="button" (click)="removePostButton()" class="btn btn-primary">Remove</button>
-          </div>
+    <div class="card" style="flex-direction: column;" cdkDrag>
+      <div class="card-header" >
+        <span contenteditable="true" (input)="onTitleChange(postIt, $event.target.innerHTML)">{{postIt.title}}</span>
+        <div class="example-handle" cdkDragHandle>
+          <svg width="24px" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M10 9h4V6h3l-5-5-5 5h3v3zm-1 1H6V7l-5 5 5 5v-3h3v-4zm14 2l-5-5v3h-3v4h3v3l5-5zm-9 3h-4v3H7l5 5 5-5h-3v-3z"></path>
+            <path d="M0 0h24v24H0z" fill="none"></path>
+          </svg>
         </div>
+      </div>
+      <div class="card-body">
+        <!--<h5 class="card-title">{{postIt.title}}</h5>-->
+        <p class="card-text" contenteditable="true" (input)="onTextChange(postIt, $event.target.innerHTML)">{{postIt.text}}</p>
+        <!--<a href="#" class="btn btn-primary">Edit</a>-->
+        <button type="button" (click)="removePostButton(postIt)" class="btn btn-primary">Remove</button>
+      </div>
+    </div>
   </div>
 </div>
 
-
-<button type="button" (click)="addPostButton()" class="btn btn-primary">Add Postit</button>
-
 <div class="row">
+  <button type="button" (click)="addPostButton()" class="btn btn-primary">Add Postit</button>
+</div>
+
+<!--<div class="row">
   <div class="col-md-12">
     <button type="button" (click)="openModal()" class="btn btn-sm btn-primary" style="margin: 20px;">
       {{buttonText}}
@@ -25,9 +32,10 @@
   </div>
 </div>
 
+
 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
   <span aria-hidden="true">&times;</span>
-</button>
+</button>-->
 
 
 
