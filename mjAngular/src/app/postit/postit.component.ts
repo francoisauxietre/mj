@@ -52,13 +52,14 @@ export class PostitComponent implements OnInit {
     let p = this.postIts.find((value) => {
       return value === postit;
     });
-    p.text = event.target.value;
+    p.text = event;
   }
 
   onTitleChange(postit: PostIt, event: any) {
     let p = this.postIts.find((value) => {
       return value === postit;
     });
-    p.title = event.target.value;
+    p.title = event;
+    //console.log(p, p.title);
   }
 }
