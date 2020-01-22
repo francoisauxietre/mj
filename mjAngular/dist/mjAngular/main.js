@@ -32,7 +32,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<!-- Toolbar -->\n<div class=\"toolbar\" role=\"banner\">\n  <img\n    width=\"40\"\n    alt=\"Angular Logo\"\n    src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==\"\n  />\n  <span>Welcome</span>\n  <div class=\"spacer\"></div>\n  <a aria-label=\"Angular on twitter\" target=\"_blank\" rel=\"noopener\" href=\"https://twitter.com/angular\" title=\"Twitter\">\n  </a>\n  <router-outlet></router-outlet>\n</div>\n<div class=\"container-fluid\">\n  <div class=\"row\">\n    <div class=\"col-sm\">\n      <app-postit></app-postit>\n    </div>\n    <div class=\"col-sm-10\">\n      Carte\n    </div>\n    <div class=\"col-sm\">\n      Liste\n    </div>\n  </div>\n  <div class=\"row\">\n    <div class=\"col-sm\">\n      Cadre bas 1\n    </div>\n    <div class=\"col-sm-10\">\n      Cadre bas 2\n    </div>\n    <div class=\"col-sm\">\n      Cadre bas 3\n    </div>\n  </div>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<!-- Toolbar -->\n<img\n  width=\"40\"\n  alt=\"Angular Logo\"\n  src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==\"\n/>\n<app-nav></app-nav>\n<router-outlet></router-outlet>\n<div class=\"container-fluid\">\n  <div class=\"row\">\n    <div class=\"col-sm\">\n    </div>\n    <div class=\"col-sm-10\">\n      Carte\n    </div>\n    <div class=\"col-sm\">\n      Liste\n    </div>\n  </div>\n  <div class=\"row\">\n    <div class=\"col-sm\">\n      Cadre bas 1\n    </div>\n    <div class=\"col-sm-10\">\n      Cadre bas 2\n    </div>\n    <div class=\"col-sm\">\n      Cadre bas 3\n    </div>\n  </div>\n</div>\n");
 
 /***/ }),
 
@@ -62,6 +62,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/nav/nav.component.html":
+/*!******************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/nav/nav.component.html ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<header>\n  <div class=\"container\">\n    <nav>\n      <ul>\n        <li><a [class.title] routerLink=\"/\" class=\"logo\">{{appTitle}}</a></li>\n        <li><a [class.menu] routerLink=\"/timeLine\">TimeLine</a></li>\n        <li><a [class.menu] routerLink=\"/postIt\">PosIt</a></li>\n      </ul>\n    </nav>\n  </div>\n</header>\n");
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/postit/postit.component.html":
 /*!************************************************************************************!*\
   !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/postit/postit.component.html ***!
@@ -71,7 +84,20 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>postit works!</p>\n<button type=\"button\" (click)=\"addPostButton\" class=\"btn btn-primary\">Add Postit</button>\n<div class=\"row\">\n  <div class=\"col-md-12\">\n    <button type=\"button\" (click)=\"openModal()\" class=\"btn btn-sm btn-primary\" style=\"margin: 20px;\">\n      {{buttonText}}\n    </button>\n  </div>\n</div>\n\n\n\n<div class=\"modal\" tabindex=\"-1\" role=\"dialog\">\n  <div class=\"modal-dialog\" role=\"document\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h5 class=\"modal-title\">Modal title</h5>\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\n          <span aria-hidden=\"true\">&times;</span>\n        </button>\n      </div>\n      <div class=\"modal-body\">\n        <p>Modal body text goes here.</p>\n      </div>\n      <div class=\"modal-footer\">\n        <button type=\"button\" class=\"btn btn-primary\">Save changes</button>\n        <button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button>\n      </div>\n    </div>\n  </div>\n</div>\n<div *ngIf=\"test\">Content to render when condition is true.\n\n</div>\n<div *ngFor=\"let postIt of postIts\">\n  <ul>\n    <li>\n      <div class=\"card\" style=\"width: 18rem;\">\n        <img class=\"card-img-top\" src=\"...\" alt=\"Card image cap\">\n        <div class=\"card-body\">\n          <h5 class=\"card-title\">postIt.title</h5>\n          <p class=\"card-text\">postIt.text</p>\n          <a href=\"#\" class=\"btn btn-primary\">Edit</a>\n        </div>\n      </div>\n    </li>\n  </ul>\n</div>\n<!-- Button trigger modal -->\n<button type=\"button\" class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#exampleModal\">\n  Launch demo modal\n</button>\n<!-- Modal -->\n<div class=\"modal fade\" id=\"exampleModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLabel\"\n     aria-hidden=\"true\">\n  <div class=\"modal-dialog\" role=\"document\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h5 class=\"modal-title\" id=\"exampleModalLabel\">Modal title</h5>\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\n          <span aria-hidden=\"true\">&times;</span>\n        </button>\n      </div>\n      <div class=\"modal-body\">\n        ...\n      </div>\n      <div class=\"modal-footer\">\n        <button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button>\n        <button type=\"button\" class=\"btn btn-primary\">Save changes</button>\n      </div>\n    </div>\n  </div>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<p>postit works!</p>\n\n\n<div *ngFor=\"let postIt of postIts\">\n  <ul>\n    <li>\n      <div class=\"postit\">\n        <h5 class=\"card-title\">{{postIt.title}}</h5>\n        <p class=\"card-text\">{{postIt.text}}</p>\n        <a href=\"#\" class=\"btn btn-primary\">Edit</a>\n        <button type=\"button\" (click)=\"removePostButton()\" class=\"btn btn-primary\">Remove</button>\n      </div>\n    </li>\n  </ul>\n</div>\n\n\n<button type=\"button\" (click)=\"addPostButton()\" class=\"btn btn-primary\">Add Postit</button>\n\n<div class=\"row\">\n  <div class=\"col-md-12\">\n    <button type=\"button\" (click)=\"openModal()\" class=\"btn btn-sm btn-primary\" style=\"margin: 20px;\">\n      {{buttonText}}\n    </button>\n  </div>\n</div>\n\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\n          <span aria-hidden=\"true\">&times;</span>\n        </button>\n\n\n\n\n<!--<div class=\"modal\" tabindex=\"-1\" role=\"dialog\">-->\n<!--  <div class=\"modal-dialog\" role=\"document\">-->\n<!--    <div class=\"modal-content\">-->\n<!--      <div class=\"modal-header\">-->\n<!--        <h5 class=\"modal-title\">Modal title</h5>-->\n<!--        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">-->\n<!--          <span aria-hidden=\"true\">&times;</span>-->\n<!--        </button>-->\n<!--      </div>-->\n<!--      <div class=\"modal-body\">-->\n<!--        <p>Modal body text goes here.</p>-->\n<!--      </div>-->\n<!--      <div class=\"modal-footer\">-->\n<!--        <button type=\"button\" class=\"btn btn-primary\">Save changes</button>-->\n<!--        <button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button>-->\n<!--      </div>-->\n<!--    </div>-->\n<!--  </div>-->\n<!--</div>-->\n<!--<div *ngIf=\"test\">Content to render when condition is true.-->\n\n\n<!--&lt;!&ndash; Button trigger modal &ndash;&gt;-->\n<!--<button type=\"button\" class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#exampleModal\">-->\n<!--  Launch demo modal-->\n<!--</button>-->\n<!--&lt;!&ndash; Modal &ndash;&gt;-->\n<!--<div class=\"modal fade\" id=\"exampleModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLabel\"-->\n<!--     aria-hidden=\"true\">-->\n<!--  <div class=\"modal-dialog\" role=\"document\">-->\n<!--    <div class=\"modal-content\">-->\n<!--      <div class=\"modal-header\">-->\n<!--        <h5 class=\"modal-title\" id=\"exampleModalLabel\">Modal title</h5>-->\n<!--        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">-->\n<!--          <span aria-hidden=\"true\">&times;</span>-->\n<!--        </button>-->\n<!--      </div>-->\n<!--      <div class=\"modal-body\">-->\n<!--        ...-->\n<!--      </div>-->\n<!--      <div class=\"modal-footer\">-->\n<!--        <button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button>-->\n<!--        <button type=\"button\" class=\"btn btn-primary\">Save changes</button>-->\n<!--      </div>-->\n<!--    </div>-->\n<!--  </div>-->\n<!--</div>-->\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/time-line/time-line.component.html":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/time-line/time-line.component.html ***!
+  \******************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<p>time-line works!</p>\n<mat-toolbar>\n  <mat-button-toggle (click)=\"addEntry()\">Ajouter un evenement</mat-button-toggle>\n  <mat-button-toggle (click)=\"removeEntry()\">Suprimer un evenement</mat-button-toggle>\n  <mat-button-toggle (click)=\"toggleSide()\">Alertner</mat-button-toggle>\n</mat-toolbar>\n<!--  <button md-raised-button (click)=\"addEntry()\">Add Entry</button>-->\n<!--  <button md-raised-button (click)=\"removeEntry()\">Remove Entry</button>-->\n<!--  <button md-raised-button (click)=\"alternate = !alternate\">Toggle Alternate</button>-->\n<!--  <button md-raised-button (click)=\"toggle = !toggle\">Toggle Toggle</button>-->\n<!--  <button md-raised-button (click)=\"expandEnabled = !expandEnabled\">Toggle Expand Enabled</button>-->\n<!--  <button md-raised-button (click)=\"toggleSide()\">Toggle Side</button>-->\n<!--</mat-toolbar>-->\n<!--  <button md-raised-button (click)=\"color = !color\">Toggle Dot Color</button>-->\n<!--  <button md-raised-button (click)=\"size = size + 10\">Increase Dot size</button>-->\n<!--  <button md-raised-button (click)=\"size = size - 10\">Decrease Dot size</button>-->\n<!--</md-toolbar>-->\n<div>\n  <div (expand)=\"onExpandEntry($event,i)\" *ngFor=\"let entry of entries; let i = index;\">\n    <div (click)=\"onHeaderClick($event)\">{{entry.header}}</div>\n    <p *ngIf=\"show\">{{entry.number}}</p>\n    <p *ngIf=\"show\">{{entry.content}}</p>\n  </div>\n</div>\n<!--<mgl-timeline [toggle]=\"toggle\" [alternate]=\"alternate\" [side]=\"side\">-->\n<!--  <mgl-timeline-entry *ngFor=\"let entry of entries; let i = index;\" (expand)=\"onExpandEntry($event, i)\">-->\n<!--    <mgl-timeline-entry-header (click)=\"onHeaderClick($event)\">-->\n<!--      <div>{{entry.header}}</div>-->\n<!--    </mgl-timeline-entry-header>-->\n<!--    <mgl-timeline-entry-content>-->\n<!--      <div>-->\n<!--        <div>{{entry.content}}</div>-->\n<!--        <div>{{entry.content}}</div>-->\n<!--        <div>{{entry.content}}</div>-->\n<!--      </div>-->\n<!--    </mgl-timeline-entry-content>-->\n<!--    <mgl-timeline-entry-dot [class]=\"color ? 'primary' : 'accent'\"-->\n<!--                            [size]=\"size\"-->\n<!--                            (click)=\"onDotClick($event)\"></mgl-timeline-entry-dot>-->\n<!--    <mgl-timeline-entry-side>2018</mgl-timeline-entry-side>-->\n<!--  </mgl-timeline-entry>-->\n<!--</mgl-timeline>-->\n");
 
 /***/ }),
 
@@ -317,10 +343,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _time_line_time_line_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./time-line/time-line.component */ "./src/app/time-line/time-line.component.ts");
+/* harmony import */ var _postit_postit_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./postit/postit.component */ "./src/app/postit/postit.component.ts");
 
 
 
-var routes = [];
+
+
+var routes = [
+    { path: 'timeLine', component: _time_line_time_line_component__WEBPACK_IMPORTED_MODULE_3__["TimeLineComponent"] },
+    { path: 'postIt', component: _postit_postit_component__WEBPACK_IMPORTED_MODULE_4__["PostitComponent"] }
+];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
     }
@@ -368,6 +401,8 @@ var AppComponent = /** @class */ (function () {
     function AppComponent() {
         this.title = 'mjAngular';
     }
+    AppComponent.prototype.timeLineShow = function () {
+    };
     AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-root',
@@ -402,6 +437,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modal_draggable_modal_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modal/draggable-modal.component */ "./src/app/modal/draggable-modal.component.ts");
 /* harmony import */ var _formulaire_post_it_formulaire_post_it_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./formulaire-post-it/formulaire-post-it.component */ "./src/app/formulaire-post-it/formulaire-post-it.component.ts");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _time_line_time_line_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./time-line/time-line.component */ "./src/app/time-line/time-line.component.ts");
+/* harmony import */ var _nav_nav_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./nav/nav.component */ "./src/app/nav/nav.component.ts");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
 
 
 
@@ -412,6 +451,20 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
+// import {
+//   // MdToolbarModule,
+//   // MdTabsModule,
+//   // MdButtonModule,
+//   // MdInputModule,
+//   // MdDatepickerModule,
+//   // MdNativeDateModule,
+//   // MdCheckboxModule,
+//   // MdRadioModule
+// } from '@angular/material';
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -421,13 +474,18 @@ var AppModule = /** @class */ (function () {
                 _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
                 _postit_postit_component__WEBPACK_IMPORTED_MODULE_5__["PostitComponent"],
                 _modal_draggable_modal_component__WEBPACK_IMPORTED_MODULE_7__["DraggableModalComponent"],
-                _formulaire_post_it_formulaire_post_it_component__WEBPACK_IMPORTED_MODULE_8__["FormulairePostItComponent"]
+                _formulaire_post_it_formulaire_post_it_component__WEBPACK_IMPORTED_MODULE_8__["FormulairePostItComponent"],
+                _time_line_time_line_component__WEBPACK_IMPORTED_MODULE_10__["TimeLineComponent"],
+                _nav_nav_component__WEBPACK_IMPORTED_MODULE_11__["NavComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
                 _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
                 _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_6__["NgbModule"],
-                _angular_forms__WEBPACK_IMPORTED_MODULE_9__["FormsModule"]
+                _angular_forms__WEBPACK_IMPORTED_MODULE_9__["FormsModule"],
+                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_12__["BrowserAnimationsModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatToolbarModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_13__["MatButtonToggleModule"],
             ],
             providers: [],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]],
@@ -568,6 +626,53 @@ var DraggableModalComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/nav/nav.component.css":
+/*!***************************************!*\
+  !*** ./src/app/nav/nav.component.css ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("header {\n  background: #7700FF;\n}\n.logo {\n  font-weight: bold;\n}\nnav {\n  justify-self: right;\n}\nul {\n  list-style-type: none;\n  margin: 0;\n  padding: 0;\n}\nli {\n  float: left;\n}\na {\n  padding: 1.5em;\n  text-transform: uppercase;\n  font-size: .8em;\n  background-color: #7700FF;\n}\n.title{\n\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbmF2L25hdi5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsbUJBQW1CO0FBQ3JCO0FBQ0E7RUFDRSxpQkFBaUI7QUFDbkI7QUFFQTtFQUNFLG1CQUFtQjtBQUNyQjtBQUNBO0VBQ0UscUJBQXFCO0VBQ3JCLFNBQVM7RUFDVCxVQUFVO0FBQ1o7QUFDQTtFQUNFLFdBQVc7QUFDYjtBQUNBO0VBQ0UsY0FBYztFQUNkLHlCQUF5QjtFQUN6QixlQUFlO0VBQ2YseUJBQXlCO0FBQzNCO0FBRUE7O0FBRUEiLCJmaWxlIjoic3JjL2FwcC9uYXYvbmF2LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJoZWFkZXIge1xuICBiYWNrZ3JvdW5kOiAjNzcwMEZGO1xufVxuLmxvZ28ge1xuICBmb250LXdlaWdodDogYm9sZDtcbn1cblxubmF2IHtcbiAganVzdGlmeS1zZWxmOiByaWdodDtcbn1cbnVsIHtcbiAgbGlzdC1zdHlsZS10eXBlOiBub25lO1xuICBtYXJnaW46IDA7XG4gIHBhZGRpbmc6IDA7XG59XG5saSB7XG4gIGZsb2F0OiBsZWZ0O1xufVxuYSB7XG4gIHBhZGRpbmc6IDEuNWVtO1xuICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlO1xuICBmb250LXNpemU6IC44ZW07XG4gIGJhY2tncm91bmQtY29sb3I6ICM3NzAwRkY7XG59XG5cbi50aXRsZXtcblxufVxuIl19 */");
+
+/***/ }),
+
+/***/ "./src/app/nav/nav.component.ts":
+/*!**************************************!*\
+  !*** ./src/app/nav/nav.component.ts ***!
+  \**************************************/
+/*! exports provided: NavComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavComponent", function() { return NavComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var NavComponent = /** @class */ (function () {
+    function NavComponent() {
+    }
+    NavComponent.prototype.ngOnInit = function () {
+        this.appTitle = 'Plateau de Mj';
+    };
+    NavComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-nav',
+            template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./nav.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/nav/nav.component.html")).default,
+            styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./nav.component.css */ "./src/app/nav/nav.component.css")).default]
+        })
+    ], NavComponent);
+    return NavComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/postit/postit.component.css":
 /*!*********************************************!*\
   !*** ./src/app/postit/postit.component.css ***!
@@ -606,6 +711,7 @@ __webpack_require__.r(__webpack_exports__);
 var PostitComponent = /** @class */ (function () {
     function PostitComponent(modalService) {
         this.modalService = modalService;
+        this.postIts = [];
         this.buttonText = 'Open Modal';
         this.modalOptions = _config_modal_config__WEBPACK_IMPORTED_MODULE_4__["ModalConfig"];
     }
@@ -613,7 +719,7 @@ var PostitComponent = /** @class */ (function () {
         var _this = this;
         this.modalRef = this.modalService.open(_modal_draggable_modal_component__WEBPACK_IMPORTED_MODULE_5__["DraggableModalComponent"], this.modalOptions);
         this.modalRef.componentInstance.title = 'Drag Me!';
-        this.modalRef.componentInstance.message = '';
+        this.modalRef.componentInstance.message = 'test';
         this.modalRef.componentInstance.onSubmitSubject
             .subscribe(function (res) {
             _this.buttonText = 'Open Post-it';
@@ -623,9 +729,14 @@ var PostitComponent = /** @class */ (function () {
     };
     PostitComponent.prototype.addPostButton = function () {
         var post = new _model_PostIt__WEBPACK_IMPORTED_MODULE_2__["PostIt"]();
+        post.id = 1;
+        post.text = 'test';
+        post.title = 'titre';
         this.postIts.push(post);
         console.log(this.postIts[0]);
         this.test = true;
+    };
+    PostitComponent.prototype.removePostButton = function () {
     };
     PostitComponent.ctorParameters = function () { return [
         { type: _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__["NgbModal"] }
@@ -638,6 +749,98 @@ var PostitComponent = /** @class */ (function () {
         })
     ], PostitComponent);
     return PostitComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/time-line/time-line.component.css":
+/*!***************************************************!*\
+  !*** ./src/app/time-line/time-line.component.css ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3RpbWUtbGluZS90aW1lLWxpbmUuY29tcG9uZW50LmNzcyJ9 */");
+
+/***/ }),
+
+/***/ "./src/app/time-line/time-line.component.ts":
+/*!**************************************************!*\
+  !*** ./src/app/time-line/time-line.component.ts ***!
+  \**************************************************/
+/*! exports provided: TimeLineComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TimeLineComponent", function() { return TimeLineComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var TimeLineComponent = /** @class */ (function () {
+    function TimeLineComponent() {
+        this.nunmberEntries = 0;
+        this.show = false;
+        this.side = 'left';
+        this.entries = [
+            {
+                header: 'header',
+                content: 'content',
+                number: 'number'
+            }
+        ];
+    }
+    TimeLineComponent.prototype.ngOnInit = function () {
+        console.log('test');
+    };
+    TimeLineComponent.prototype.addEntry = function () {
+        this.nunmberEntries++;
+        this.entries.push({
+            header: 'header',
+            content: 'content',
+            number: this.nunmberEntries.toString()
+        });
+    };
+    TimeLineComponent.prototype.removeEntry = function () {
+        if (this.nunmberEntries > 0) {
+            this.nunmberEntries--;
+        }
+        this.entries.pop();
+    };
+    TimeLineComponent.prototype.onHeaderClick = function (event) {
+        if (!this.show) {
+            this.show = true;
+            event.stopPropagation();
+        }
+        else {
+            this.show = false;
+        }
+        console.log('expension');
+    };
+    TimeLineComponent.prototype.onDotClick = function (event) {
+        if (!this.show) {
+            event.stopPropagation();
+        }
+    };
+    TimeLineComponent.prototype.onExpandEntry = function (expanded, index) {
+        console.log("Expand status of entry #" + index + " changed to " + expanded);
+    };
+    TimeLineComponent.prototype.toggleSide = function () {
+        this.side = this.side === 'left' ? 'right' : 'left';
+    };
+    TimeLineComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-time-line',
+            template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./time-line.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/time-line/time-line.component.html")).default,
+            styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./time-line.component.css */ "./src/app/time-line/time-line.component.css")).default]
+        })
+    ], TimeLineComponent);
+    return TimeLineComponent;
 }());
 
 
