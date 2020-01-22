@@ -29,7 +29,6 @@ export class PostitComponent implements OnInit {
       });
   }
 
-
   ngOnInit() {
   }
 
@@ -43,7 +42,23 @@ export class PostitComponent implements OnInit {
     this.test = true;
   }
 
-  removePostButton(){
+  removePostButton(postit: PostIt, event: any) {
+    this.postIts = this.postIts.filter((value) => {
+      return value !== postit;
+    });
+  }
 
+  onTextChange(postit: PostIt, event: any) {
+    let p = this.postIts.find((value) => {
+      return value === postit;
+    });
+    p.text = event.target.value;
+  }
+
+  onTitleChange(postit: PostIt, event: any) {
+    let p = this.postIts.find((value) => {
+      return value === postit;
+    });
+    p.title = event.target.value;
   }
 }
