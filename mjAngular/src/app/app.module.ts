@@ -12,6 +12,7 @@ import { TimeLineComponent } from './time-line/time-line.component';
 import { NavComponent } from './nav/nav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonToggleModule, MatToolbarModule} from '@angular/material';
+import { CarteComponent } from './carte/carte.component';
 // import {
 //   // MdToolbarModule,
 //   // MdTabsModule,
@@ -30,7 +31,8 @@ import {MatButtonToggleModule, MatToolbarModule} from '@angular/material';
     DraggableModalComponent,
     FormulairePostItComponent,
     TimeLineComponent,
-    NavComponent
+    NavComponent,
+    CarteComponent
   ],
   imports: [
     BrowserModule,

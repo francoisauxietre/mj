@@ -15,6 +15,9 @@
     },
     "cordova-plugin-camera": {
       "PACKAGE_NAME": "com.froxworld.mj"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.froxworld.mj"
     }
   },
   "dependent_plugins": {}
