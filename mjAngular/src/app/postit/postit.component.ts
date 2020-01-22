@@ -22,13 +22,12 @@ export class PostitComponent implements OnInit {
   openModal() {
     this.modalRef = this.modalService.open(DraggableModalComponent, this.modalOptions);
     this.modalRef.componentInstance.title = 'Drag Me!';
-    this.modalRef.componentInstance.message = 'test';
+    this.modalRef.componentInstance.message = 'test blablablablablabla';
     this.modalRef.componentInstance.onSubmitSubject
       .subscribe((res: boolean) => {
         this.buttonText = 'Open Post-it';
       });
   }
-
 
   ngOnInit() {
   }
@@ -36,14 +35,31 @@ export class PostitComponent implements OnInit {
   addPostButton() {
     const post = new PostIt();
     post.id = 1;
-    post.text = 'test';
+    post.text = 'test blablablablablablabla';
     post.title = 'titre';
     this.postIts.push(post);
     console.log(this.postIts[0]);
     this.test = true;
   }
 
-  removePostButton(){
+  removePostButton(postit: PostIt, event: any) {
+    this.postIts = this.postIts.filter((value) => {
+      return value !== postit;
+    });
+  }
 
+  onTextChange(postit: PostIt, event: any) {
+    let p = this.postIts.find((value) => {
+      return value === postit;
+    });
+    p.text = event;
+  }
+
+  onTitleChange(postit: PostIt, event: any) {
+    let p = this.postIts.find((value) => {
+      return value === postit;
+    });
+    p.title = event;
+    //console.log(p, p.title);
   }
 }

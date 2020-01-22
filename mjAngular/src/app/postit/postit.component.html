@@ -1,17 +1,17 @@
-<p>postit works!</p>
-
-
-<div *ngFor="let postIt of postIts">
-  <ul>
-    <li>
-      <div class="postit">
-        <h5 class="card-title">{{postIt.title}}</h5>
-        <p class="card-text">{{postIt.text}}</p>
-        <a href="#" class="btn btn-primary">Edit</a>
-        <button type="button" (click)="removePostButton()" class="btn btn-primary">Remove</button>
-      </div>
-    </li>
-  </ul>
+<div class="row">
+  <div *ngFor="let postIt of postIts">
+        <div class="card" style="width: 18rem;">
+          <div class="card-header" contenteditable="true" (input)="onTitleChange(postIt, $event.target.innerHTML)">
+            {{postIt.title}}
+          </div>
+          <div class="card-body">
+            <!--<h5 class="card-title">{{postIt.title}}</h5>-->
+            <p class="card-text" contenteditable="true" (input)="onTextChange(postIt, $event.target.innerHTML)">{{postIt.text}}</p>
+            <!--<a href="#" class="btn btn-primary">Edit</a>-->
+            <button type="button" (click)="removePostButton(postIt)" class="btn btn-primary">Remove</button>
+          </div>
+        </div>
+  </div>
 </div>
 
 
@@ -25,9 +25,9 @@
   </div>
 </div>
 
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+</button>
 
 
 
