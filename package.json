@@ -34,5 +34,13 @@
     "platforms": [
       "android"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/francoisauxietre/mj.git"
+  },
+  "bugs": {
+    "url": "https://github.com/francoisauxietre/mj/issues"
+  },
+  "homepage": "https://github.com/francoisauxietre/mj#readme"
 }
