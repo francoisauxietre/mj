@@ -18,6 +18,12 @@ import { ElementTimeLineComponent } from './element-time-line/element-time-line.
 
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import { MusicComponent } from './music/music.component';
+import { EyeComponent } from './eye/eye.component';
+import { ParametersComponent } from './parameters/parameters.component';
+import { SaveComponent } from './save/save.component';
+import { InitiativeComponent } from './initiative/initiative.component';
+import { PlayersComponent } from './players/players.component';
+import { HelpComponent } from './help/help.component';
 
 // import {
 //   // MdToolbarModule,
@@ -41,7 +47,13 @@ import { MusicComponent } from './music/music.component';
     CarteComponent,
     GenerateurComponent,
     ElementTimeLineComponent,
-    MusicComponent
+    MusicComponent,
+    EyeComponent,
+    ParametersComponent,
+    SaveComponent,
+    InitiativeComponent,
+    PlayersComponent,
+    HelpComponent
   ],
   imports: [
     BrowserModule,
