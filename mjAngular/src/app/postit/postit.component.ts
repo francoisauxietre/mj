@@ -3,6 +3,7 @@ import {PostIt} from '../model/PostIt';
 import {NgbModal, NgbModalOptions} from '@ng-bootstrap/ng-bootstrap';
 import {ModalConfig} from '../config/modal-config';
 import {DraggableModalComponent} from '../modal/draggable-modal.component';
+import {CdkDragDrop, moveItemInArray} from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'app-postit',
@@ -62,4 +63,9 @@ export class PostitComponent implements OnInit {
     p.title = event;
     //console.log(p, p.title);
   }
+
+  drop(event: CdkDragDrop<string[]>) {
+    moveItemInArray(this.postIts, event.previousIndex, event.currentIndex);
+  }
+
 }
