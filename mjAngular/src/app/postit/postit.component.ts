@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {PostIt} from '../../model/PostIt';
+import {PostIt} from '../model/PostIt';
 import {NgbModal, NgbModalOptions} from '@ng-bootstrap/ng-bootstrap';
 import {ModalConfig} from '../config/modal-config';
 import {DraggableModalComponent} from '../modal/draggable-modal.component';
