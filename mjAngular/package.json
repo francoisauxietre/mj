@@ -46,5 +46,9 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
-  }
+  },
+  "description": "Attention les imports sdk jdk etc et challenge pour bien definir les variables d'environnement et $PATH verfifier ses version avec java et javac les deux 1.8 sdk",
+  "main": "karma.conf.js",
+  "author": "",
+  "license": "ISC"
 }
