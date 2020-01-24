@@ -1,9 +1,9 @@
-<div>
+<div id="generator">
   <input type="number" value="1" min="1" [(ngModel)]="nbDe" name="nbDe" id="dice_generator"/>D
   <select [(ngModel)]="selectDe" name="selectDe" >
     <option *ngFor="let de of listDe">{{de}}</option>
-  </select><br>
-  <button (click)="onSubmit()">Générer</button>
+  </select>
+  <button (click)="onSubmit()">></button>
 </div>
 <div>
   <p id="list_values">{{listValue}}</p>
