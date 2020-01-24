@@ -1,72 +1,42 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {ElementTimeLine} from '../model/elementTimeLine';
+import {element} from 'protractor';
 
 @Component({
   selector: 'app-time-line',
   templateUrl: './time-line.component.html',
   styleUrls: ['./time-line.component.css']
 })
-export class TimeLineComponent implements OnInit{
+export class TimeLineComponent implements OnInit {
 
   constructor() { }
-  nunmberEntries = 0;
+  numberEntries = 0;
   alternate: true;
   toggle: true;
   color: false;
   size: 40;
-  show: boolean = false;
   side = 'left';
 
-  entries = [
-    {
-      header: 'header',
-      content: 'content',
-      number: 'number'
-    }
-  ]
+  // @Input() entry: ElementTimeLine;
+  entries: ElementTimeLine[] = [];
 
   ngOnInit(): void {
     console.log('test');
   }
 
   addEntry() {
-    this.nunmberEntries++;
-    this.entries.push({
-      header: 'header',
-      content: 'content',
-      number: this.nunmberEntries.toString()
-    });
+    this.numberEntries++;
+    const entry = {header: '', description: '', show: true};
+    // this.entry = element1;
+    this.entries.push(entry);
   }
 
   removeEntry() {
-    if (this.nunmberEntries > 0) {
-      this.nunmberEntries--;
+    if (this.numberEntries > 0) {
+      this.numberEntries--;
     }
     this.entries.pop();
   }
 
-  onHeaderClick(event) {
-    if (!this.show) {
-        this.show = true;
-        event.stopPropagation();
-      } else {
-        this.show = false;
-    }
-
-    console.log('expension');
-  }
-
-  onDotClick(event) {
-    if (!this.show) {
-      event.stopPropagation();
-    }
-  }
-
-  onExpandEntry(expanded, index) {
-    console.log(`Expand status of entry #${index} changed to ${expanded}`)
-  }
-
-  toggleSide() {
-    this.side = this.side === 'left' ? 'right' : 'left';
-  }
 
 }

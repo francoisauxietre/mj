@@ -11,9 +11,10 @@ import {FormsModule} from '@angular/forms';
 import { TimeLineComponent } from './time-line/time-line.component';
 import { NavComponent } from './nav/nav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatButtonToggleModule, MatToolbarModule} from '@angular/material';
+import {MatButtonToggleModule, MatFormFieldModule, MatInputModule, MatToolbarModule} from '@angular/material';
 import { CarteComponent } from './carte/carte.component';
 import {GenerateurComponent} from './generateur/generateur.component';
+import { ElementTimeLineComponent } from './element-time-line/element-time-line.component';
 
 import {DragDropModule} from '@angular/cdk/drag-drop';
 
@@ -37,7 +38,8 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
     TimeLineComponent,
     NavComponent,
     CarteComponent,
-    GenerateurComponent
+    GenerateurComponent,
+    ElementTimeLineComponent
   ],
   imports: [
     BrowserModule,
@@ -48,6 +50,8 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonToggleModule,
+    MatFormFieldModule,
+    MatInputModule,
     // MdToolbarModule,
     // MdTabsModule,
     // MdButtonModule,

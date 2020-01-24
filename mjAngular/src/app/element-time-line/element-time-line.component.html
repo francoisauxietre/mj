@@ -1,0 +1,36 @@
+<div style="clear: both"></div>
+<div class="row">
+  <div class="ma_ligne_verticale">
+    <div class="card" (expand)="onExpandEntry($event,i)">
+      <div class="card_title">
+        <button *ngIf="!this.change" type="button" class="btn btn-outline-primary" (click)="entryInput.show = !entryInput.show"
+                [attr.aria-expanded]="!entryInput.show" aria-controls="collapseExample" style="min-height: 30px">
+          {{entryInput.header}}
+        </button>
+        <div *ngIf="this.change">
+            <input placeholder="titre" [(ngModel)]="entryInput.header">
+        </div>
+      </div>
+      <div class="card-body" id="collapseExample" [ngbCollapse]="entryInput.show">
+        <div *ngIf="!this.change">
+          {{entryInput.description}}
+        </div>
+        <div *ngIf="this.change">
+            <input placeholder="description" [(ngModel)]="entryInput.description">
+        </div>
+
+      </div>
+      <div [ngbCollapse]="entryInput.show">
+        <button *ngIf="!this.change" class="btn btn-primary" (click)="modify()">
+          Modify
+        </button>
+        <button *ngIf="this.change" class="btn btn-primary" (click)="validate()">
+          Validate
+        </button>
+      </div>
+    </div>
+
+  </div>
+  <div class="ma_colonne_droite"></div>
+  <div style="clear: both"></div>
+</div>

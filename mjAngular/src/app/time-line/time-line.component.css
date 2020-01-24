@@ -1,3 +1,13 @@
+.ma_ligne_verticale{
+  float:left;
+  width: 10px;
+  margin-left: 40px;
+  margin-right: 20px;
+  background-color: #5f8886;
+  height: 100%;
+}
+
+
 .card {
     height: 100%;
     padding: 0;

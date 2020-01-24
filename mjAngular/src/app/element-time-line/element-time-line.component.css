@@ -1,0 +1,17 @@
+.ma_ligne_verticale{
+  float: left;
+  width: 1%;
+  margin-left: 8%;
+  margin-right: 2%;
+  background-color: #5f8886;
+  height: 100%;
+}
+
+.ma_colonne_droite{
+  float: left;
+  width: 90%;
+}
+
+.card{
+  margin: 8px 8px 16px;
+}

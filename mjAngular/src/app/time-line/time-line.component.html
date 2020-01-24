@@ -2,41 +2,10 @@
 <mat-toolbar>
   <mat-button-toggle (click)="addEntry()">Ajouter un evenement</mat-button-toggle>
   <mat-button-toggle (click)="removeEntry()">Suprimer un evenement</mat-button-toggle>
-  <mat-button-toggle (click)="toggleSide()">Alertner</mat-button-toggle>
 </mat-toolbar>
-<!--  <button md-raised-button (click)="addEntry()">Add Entry</button>-->
-<!--  <button md-raised-button (click)="removeEntry()">Remove Entry</button>-->
-<!--  <button md-raised-button (click)="alternate = !alternate">Toggle Alternate</button>-->
-<!--  <button md-raised-button (click)="toggle = !toggle">Toggle Toggle</button>-->
-<!--  <button md-raised-button (click)="expandEnabled = !expandEnabled">Toggle Expand Enabled</button>-->
-<!--  <button md-raised-button (click)="toggleSide()">Toggle Side</button>-->
-<!--</mat-toolbar>-->
-<!--  <button md-raised-button (click)="color = !color">Toggle Dot Color</button>-->
-<!--  <button md-raised-button (click)="size = size + 10">Increase Dot size</button>-->
-<!--  <button md-raised-button (click)="size = size - 10">Decrease Dot size</button>-->
-<!--</md-toolbar>-->
-<div>
-  <div (expand)="onExpandEntry($event,i)" *ngFor="let entry of entries; let i = index;">
-    <div (click)="onHeaderClick($event)">{{entry.header}}</div>
-    <p *ngIf="show">{{entry.number}}</p>
-    <p *ngIf="show">{{entry.content}}</p>
+
+<div class="container-fluid">
+  <div *ngFor="let entry of entries; let i = index;">
+    <app-element-time-line [entryInput]="entry"></app-element-time-line>
   </div>
 </div>
-<!--<mgl-timeline [toggle]="toggle" [alternate]="alternate" [side]="side">-->
-<!--  <mgl-timeline-entry *ngFor="let entry of entries; let i = index;" (expand)="onExpandEntry($event, i)">-->
-<!--    <mgl-timeline-entry-header (click)="onHeaderClick($event)">-->
-<!--      <div>{{entry.header}}</div>-->
-<!--    </mgl-timeline-entry-header>-->
-<!--    <mgl-timeline-entry-content>-->
-<!--      <div>-->
-<!--        <div>{{entry.content}}</div>-->
-<!--        <div>{{entry.content}}</div>-->
-<!--        <div>{{entry.content}}</div>-->
-<!--      </div>-->
-<!--    </mgl-timeline-entry-content>-->
-<!--    <mgl-timeline-entry-dot [class]="color ? 'primary' : 'accent'"-->
-<!--                            [size]="size"-->
-<!--                            (click)="onDotClick($event)"></mgl-timeline-entry-dot>-->
-<!--    <mgl-timeline-entry-side>2018</mgl-timeline-entry-side>-->
-<!--  </mgl-timeline-entry>-->
-<!--</mgl-timeline>-->
