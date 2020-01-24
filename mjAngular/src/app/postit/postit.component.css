@@ -4,16 +4,35 @@
     flex-direction: column;
     margin: 17px;
     background-color: #fff599;
+    width: 100%;
+    height: 12em;
+    align-items: inherit;
 }
 
 .card-header {
     width: 100%;
-
+    padding: .2rem 0.5rem;
+    font-size: medium;
     background-color: #d3cb80;
+}
+
+.card-body {
+    padding: 0.6rem;
+    font-size: small;
+}
+
+.post-it-list {
+    width: 85%;
 }
 
 .close-post-it {
     display: inline;
     float: right;
+    font-size: inherit;
+}
+
+.bouton-plus {
+    float: right;
+    margin: 0.35em;
 }
 

@@ -1,5 +1,7 @@
 <div class="row">
-  <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+  
+  <div cdkDropList class="example-list post-it-list" (cdkDropListDropped)="drop($event)">
+    <button type="button" (click)="addPostButton()" class="btn btn-primary bouton-plus">+</button>
       <div *ngFor="let postIt of postIts" class="card" cdkDrag>
         <div class="card-header" >
           <span contenteditable="true" (input)="onTitleChange(postIt, $event.target.innerHTML)">{{postIt.title}}</span>
@@ -15,9 +17,6 @@
   </div>
 </div>
 
-<div class="row">
-  <button type="button" (click)="addPostButton()" class="btn btn-primary">Add Postit</button>
-</div>
 
 <!--<div class="row">
   <div class="col-md-12">
