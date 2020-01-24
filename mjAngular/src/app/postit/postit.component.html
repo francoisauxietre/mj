@@ -1,14 +1,15 @@
 <div class="row">
   <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
-      <div *ngFor="let postIt of postIts" class="card" style="flex-direction: column;" cdkDrag>
+      <div *ngFor="let postIt of postIts" class="card" cdkDrag>
         <div class="card-header" >
           <span contenteditable="true" (input)="onTitleChange(postIt, $event.target.innerHTML)">{{postIt.title}}</span>
+          <i class="material-icons close-post-it" (click)="removePostButton(postIt)">close</i>
         </div>
         <div class="card-body">
           <!--<h5 class="card-title">{{postIt.title}}</h5>-->
           <p class="card-text" contenteditable="true" (input)="onTextChange(postIt, $event.target.innerHTML)">{{postIt.text}}</p>
           <!--<a href="#" class="btn btn-primary">Edit</a>-->
-          <button type="button" (click)="removePostButton(postIt)" class="btn btn-primary">Remove</button>
+          
         </div>
       </div>
   </div>

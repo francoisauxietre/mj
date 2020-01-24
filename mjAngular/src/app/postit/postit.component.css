@@ -1,13 +1,19 @@
 .card {
     height: auto;
     padding: 0;
+    flex-direction: column;
+    margin: 17px;
+    background-color: #fff599;
 }
 
 .card-header {
     width: 100%;
+
+    background-color: #d3cb80;
 }
 
-.example-handle {
+.close-post-it {
     display: inline;
     float: right;
 }
+

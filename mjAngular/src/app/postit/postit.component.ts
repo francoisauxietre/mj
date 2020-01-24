@@ -36,7 +36,7 @@ export class PostitComponent implements OnInit {
   addPostButton() {
     const post = new PostIt();
     post.id = 1;
-    post.text = 'test blablablablablablabla';
+    post.text = 'texte';
     post.title = 'titre';
     this.postIts.push(post);
     console.log(this.postIts[0]);
