@@ -1,5 +1,16 @@
-
-#dice_generator {
-  width: 5%;
+.div {
+  overflow: scroll;
+  overflow-wrap: break-word; 
+  word-wrap: break-word;
 }
 
+#total {
+  font-weight: bold;
+}
+
+#dice_generator {
+  width: 50%;
+  overflow: scroll;
+  overflow-wrap: break-word; 
+  word-wrap: break-word;
+}

@@ -1,5 +1,5 @@
-<div id="generator">
-  <input type="number" value="1" min="1" [(ngModel)]="nbDe" name="nbDe" id="dice_generator"/>D
+<div>
+  <input id="dice_generator" type="number" value="1" min="1" [(ngModel)]="nbDe" name="nbDe"/>D
   <select [(ngModel)]="selectDe" name="selectDe" >
     <option *ngFor="let de of listDe">{{de}}</option>
   </select>
