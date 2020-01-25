@@ -12,6 +12,7 @@ export class GenerateurComponent implements OnInit {
   selectDe: number;
   nbDe: number;
   listValue : String ="";
+  listValueSorted = []
 
   constructor() {
 
@@ -28,10 +29,12 @@ export class GenerateurComponent implements OnInit {
       this.listValue = "";
       while(i>0){
         let value = (Math.floor(Math.random()*this.selectDe)+1);
+        this.listValueSorted.push(value);
         this.total = this.total + value;
-        this.listValue += "[" + value.toString() + "] ";
         i--;
       }
+      this.listValueSorted.sort();
+      this.listValueSorted.forEach(element => this.listValue += "[" + element.toString() + "] ");
     } else {
       //TODO Message d'erreur
     }
