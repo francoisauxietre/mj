@@ -33,7 +33,7 @@ export class GenerateurComponent implements OnInit {
         this.total = this.total + value;
         i--;
       }
-      this.listValueSorted.sort();
+      this.listValueSorted.sort(function (a,b) { return a-b; });
       this.listValueSorted.forEach(element => this.listValue += "[" + element.toString() + "] ");
     } else {
       //TODO Message d'erreur
