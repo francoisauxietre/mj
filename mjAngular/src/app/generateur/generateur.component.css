@@ -1,6 +1,6 @@
 .div {
   overflow: scroll;
-  overflow-wrap: break-word; 
+  overflow-wrap: break-word;
   word-wrap: break-word;
 }
 
@@ -9,8 +9,10 @@
 }
 
 #dice_generator {
-  width: 50%;
+  width: 35%;
   overflow: scroll;
-  overflow-wrap: break-word; 
+  overflow-wrap: break-word;
   word-wrap: break-word;
 }
+
+
