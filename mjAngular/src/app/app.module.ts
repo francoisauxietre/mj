@@ -30,8 +30,8 @@ import { ModelFicheStatsComponent } from './model-fiche-stats/model-fiche-stats.
 import { ModelFicheEquipementComponent } from './model-fiche-equipement/model-fiche-equipement.component';
 import { ModelFicheInventaireComponent } from './model-fiche-inventaire/model-fiche-inventaire.component';
 
-import {MatDialogModule} from '@angular/material';
-
+import { MatDialogModule } from '@angular/material';
+import { MatCheckboxModule } from '@angular/material';
 // import {
 //   // MdToolbarModule,
 //   // MdTabsModule,
@@ -80,6 +80,7 @@ import {MatDialogModule} from '@angular/material';
     MatFormFieldModule,
     MatInputModule,
     MatDialogModule,
+    MatCheckboxModule
     // MdToolbarModule,
     // MdTabsModule,
     // MdButtonModule,
