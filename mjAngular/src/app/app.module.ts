@@ -16,7 +16,7 @@ import { CarteComponent } from './carte/carte.component';
 import {GenerateurComponent} from './generateur/generateur.component';
 import { ElementTimeLineComponent } from './element-time-line/element-time-line.component';
 
-import {DragDropModule} from '@angular/cdk/drag-drop';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 import { MusicComponent } from './music/music.component';
 import { EyeComponent } from './eye/eye.component';
 import { ParametersComponent } from './parameters/parameters.component';
