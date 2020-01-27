@@ -15,7 +15,7 @@ export class ModelFicheComponent implements OnInit {
   }
 
   openModal() {
-    this.dialog.open(ModelFicheModal, {
+    this.dialog.open(ModelFicheModalComponent, {
       data: {
         animal: 'panda'
       }
@@ -27,6 +27,6 @@ export class ModelFicheComponent implements OnInit {
   selector: 'app-model-fiche-modal',
   templateUrl: 'model-fiche-modal.html',
 })
-export class ModelFicheModal {
+export class ModelFicheModalComponent {
   constructor(@Inject(MAT_DIALOG_DATA) public data: any) {}
 }

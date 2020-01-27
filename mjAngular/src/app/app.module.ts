@@ -4,16 +4,16 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PostitComponent } from './postit/postit.component';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import {DraggableModalComponent} from './modal/draggable-modal.component';
+import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { DraggableModalComponent} from './modal/draggable-modal.component';
 import { FormulairePostItComponent } from './formulaire-post-it/formulaire-post-it.component';
-import {FormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { TimeLineComponent } from './time-line/time-line.component';
 import { NavComponent } from './nav/nav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatButtonToggleModule, MatFormFieldModule, MatInputModule, MatToolbarModule} from '@angular/material';
+import { MatButtonToggleModule, MatFormFieldModule, MatInputModule, MatToolbarModule } from '@angular/material';
 import { CarteComponent } from './carte/carte.component';
-import {GenerateurComponent} from './generateur/generateur.component';
+import { GenerateurComponent } from './generateur/generateur.component';
 import { ElementTimeLineComponent } from './element-time-line/element-time-line.component';
 
 import { DragDropModule } from '@angular/cdk/drag-drop';
@@ -24,7 +24,7 @@ import { SaveComponent } from './save/save.component';
 import { InitiativeComponent } from './initiative/initiative.component';
 import { PlayersComponent } from './players/players.component';
 import { HelpComponent } from './help/help.component';
-import { ModelFicheComponent, ModelFicheModal } from './model-fiche/model-fiche.component';
+import { ModelFicheComponent, ModelFicheModalComponent } from './model-fiche/model-fiche.component';
 import { ModelFicheInfoComponent } from './model-fiche-info/model-fiche-info.component';
 import { ModelFicheStatsComponent } from './model-fiche-stats/model-fiche-stats.component';
 import { ModelFicheEquipementComponent } from './model-fiche-equipement/model-fiche-equipement.component';
@@ -66,7 +66,7 @@ import {MatDialogModule} from '@angular/material';
     ModelFicheStatsComponent,
     ModelFicheEquipementComponent,
     ModelFicheInventaireComponent,
-    ModelFicheModal
+    ModelFicheModalComponent
   ],
   imports: [
     BrowserModule,
@@ -89,8 +89,8 @@ import {MatDialogModule} from '@angular/material';
     // MdCheckboxModule,
     // MdRadioModule
   ],
-  providers: [ModelFicheModal],
+  providers: [ModelFicheModalComponent],
   bootstrap: [AppComponent],
-  entryComponents: [DraggableModalComponent, ModelFicheModal]
+  entryComponents: [DraggableModalComponent, ModelFicheModalComponent]
 })
 export class AppModule { }
