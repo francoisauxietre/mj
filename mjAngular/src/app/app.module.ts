@@ -24,6 +24,11 @@ import { SaveComponent } from './save/save.component';
 import { InitiativeComponent } from './initiative/initiative.component';
 import { PlayersComponent } from './players/players.component';
 import { HelpComponent } from './help/help.component';
+import { ModelFicheComponent } from './model-fiche/model-fiche.component';
+import { ModelFicheInfoComponent } from './model-fiche-info/model-fiche-info.component';
+import { ModelFicheStatsComponent } from './model-fiche-stats/model-fiche-stats.component';
+import { ModelFicheEquipementComponent } from './model-fiche-equipement/model-fiche-equipement.component';
+import { ModelFicheInventaireComponent } from './model-fiche-inventaire/model-fiche-inventaire.component';
 
 // import {
 //   // MdToolbarModule,
@@ -53,7 +58,12 @@ import { HelpComponent } from './help/help.component';
     SaveComponent,
     InitiativeComponent,
     PlayersComponent,
-    HelpComponent
+    HelpComponent,
+    ModelFicheComponent,
+    ModelFicheInfoComponent,
+    ModelFicheStatsComponent,
+    ModelFicheEquipementComponent,
+    ModelFicheInventaireComponent
   ],
   imports: [
     BrowserModule,
