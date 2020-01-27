@@ -1,6 +1,6 @@
-export class ElementTimeLine {
+export class SubTask {
   id: number;
-  header: string;
   description: string;
+  header: string;
   show: boolean;
 }

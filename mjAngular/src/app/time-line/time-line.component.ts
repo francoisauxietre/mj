@@ -1,6 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {ElementTimeLine} from '../model/elementTimeLine';
-import {element} from 'protractor';
 
 @Component({
   selector: 'app-time-line',
@@ -26,7 +25,7 @@ export class TimeLineComponent implements OnInit {
 
   addEntry() {
     this.numberEntries++;
-    const entry = {header: '', description: '', show: true};
+    const entry = {id: 0, header: '', description: '', show: true};
     // this.entry = element1;
     this.entries.push(entry);
   }
