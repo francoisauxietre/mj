@@ -3,12 +3,13 @@
   <div class="ma_ligne_verticale">
     <div class="card" (expand)="onExpandEntry($event,i)">
       <div class="card_title">
-        <button *ngIf="!this.change" type="button" class="btn btn-outline-primary" (click)="entryInput.show = !entryInput.show"
+        <button *ngIf="!this.change" type="button" class="btn btn-outline-primary"
+                (click)="entryInput.show = !entryInput.show"
                 [attr.aria-expanded]="!entryInput.show" aria-controls="collapseExample" style="min-height: 30px">
           {{entryInput.header}}
         </button>
         <div *ngIf="this.change">
-            <input placeholder="titre" [(ngModel)]="entryInput.header">
+          <input placeholder="titre" [(ngModel)]="entryInput.header">
         </div>
       </div>
       <div class="card-body" id="collapseExample" [ngbCollapse]="entryInput.show">
@@ -16,9 +17,8 @@
           {{entryInput.description}}
         </div>
         <div *ngIf="this.change">
-            <input placeholder="description" [(ngModel)]="entryInput.description">
+          <input placeholder="description" [(ngModel)]="entryInput.description">
         </div>
-
       </div>
       <div [ngbCollapse]="entryInput.show">
         <button *ngIf="!this.change" class="btn btn-primary" (click)="modify()">
@@ -32,31 +32,22 @@
         </button>
       </div>
       <div>
-<!--        <input *ngIf="data."  type="text" class="form-control" id="name"-->
-<!--                required-->
-<!--                [(ngModel)]="data.title" />-->
-
         <button *ngIf="!this.showTask" class="btn btn-primary" (click)="validateTask()">
           ValidateTask
         </button>
         <div *ngIf="this.showTask">
           <ul>
-            <li *ngFor="let task of subTasks">{{ task.id }}{{task.description}}{{task.header}}</li>
+            <li *ngFor="let task of subTasks">{{ task.id }}{{task.header}}
+              <input type="text" class="form-control" id="name" required [(ngModel)]="task.description"/>
+            </li>
           </ul>
         </div>
-
       </div>
-
-
-
     </div>
-
-<!--    <div *ngIf="this.showTask">-->
-<!--      <input placeholder="tasche" [(ngModel)]="entryInput.header">-->
-<!--    </div>-->
-
-<!--    <p>Hello {{ data.name }}!</p>-->
-
+    <!--    <div *ngIf="this.showTask">-->
+    <!--      <input placeholder="tasche" [(ngModel)]="entryInput.header">-->
+    <!--    </div>-->
+    <!--    <p>Hello {{ data.name }}!</p>-->
   </div>
   <div class="ma_colonne_droite"></div>
   <div style="clear: both"></div>
