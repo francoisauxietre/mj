@@ -31,6 +31,10 @@
     font-size: inherit;
 }
 
+.close-post-it:hover {
+    color: grey;
+}
+
 .bouton-plus {
     float: right;
     margin: 0.35em;
