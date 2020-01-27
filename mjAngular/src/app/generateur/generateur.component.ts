@@ -10,7 +10,7 @@ export class GenerateurComponent implements OnInit {
   listDe = [4,6,8,10,12,20,100];
   total: number;
   selectDe: number;
-  nbDe: number;
+  nbDe: number = 1;
   listValue : String ="";
   listValueSorted = []
 
@@ -23,6 +23,8 @@ export class GenerateurComponent implements OnInit {
 
   onSubmit(){
 
+    this.listValue ="";
+    this.listValueSorted = [];
     if(this.nbDe!=null && this.selectDe!=null){
       let i = this.nbDe;
       this.total = 0;
