@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarteComponent implements OnInit {
 
+  cheminImage: any = '../assets/Images/gantt1.png';
+
   constructor() { }
 
   ngOnInit() {
