@@ -11,6 +11,7 @@ export class ModelFicheComponent implements OnInit {
   constructor(public dialog: MatDialog) {}
 
   ngOnInit() {
+
   }
 
   openModal() {
