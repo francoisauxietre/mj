@@ -11,7 +11,7 @@ import {AppData} from '../model/appData';
 export class ElementTimeLineComponent implements OnInit {
   @Input() entryInput: ElementTimeLine;
   public change: boolean;
-  public subTasks: SubTask[];
+  public subTasks: SubTask[] = [];
   public Ids: number[] = null;
   public courantId = 0;
   public showTask: boolean;
