@@ -48,9 +48,14 @@ export class GenerateurComponent implements OnInit {
     }
       else {
         var number=window.prompt("Entrez une valeur de dé personnalisée:");
+        if(number==""){
+          window.alert("Veuillez choisir une taille de dé");
+        }
+        else {
         this.listDe.pop();
         this.listDe.push(number);
         this.listDe.push("Autre")
+        }
       }
 
     } else {
