@@ -11,8 +11,7 @@ const routes: Routes = [
   {path: 'timeLine', component: TimeLineComponent},
   {path: 'postIt', component: PostitComponent},
   {path: 'carte', component: CarteComponent},
-  {path: 'generateur', component: GenerateurComponent},
-  {path: 'modelFiche', component: ModelFicheComponent}
+  {path: 'generateur', component: GenerateurComponent}
   ];
 
 @NgModule({

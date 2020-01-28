@@ -14,7 +14,7 @@
 
 .list-right {
   position: fixed;
-  top: 42px;
+  top: 40px;
   width: 15%;
   right: 0;
   height: 100%;
@@ -53,6 +53,6 @@
   background-color: #7e7962;
   border: solid 1px #3e3e3e;
   overflow: scroll;
-  overflow-wrap: break-word; 
+  overflow-wrap: break-word;
   word-wrap: break-word;
 }

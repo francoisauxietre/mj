@@ -1,11 +1,13 @@
 <p>time-line works!</p>
-<mat-toolbar>
-  <mat-button-toggle (click)="addEntry()">Ajouter un evenement</mat-button-toggle>
-  <mat-button-toggle (click)="removeEntry()">Suprimer un evenement</mat-button-toggle>
-</mat-toolbar>
+<section class="timeline">
+  <mat-toolbar>
+    <mat-button-toggle (click)="addEntry()">Ajouter un evenement</mat-button-toggle>
+    <mat-button-toggle (click)="removeEntry()">Suprimer un evenement</mat-button-toggle>
+  </mat-toolbar>
 
-<div class="container-fluid">
-  <div *ngFor="let entry of entries; let i = index;">
-    <app-element-time-line [entryInput]="entry"></app-element-time-line>
+  <div class="container-fluid">
+    <div *ngFor="let entry of entries; let i = index;">
+      <app-element-time-line [entryInput]="entry"></app-element-time-line>
+    </div>
   </div>
-</div>
+</section>

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Inject, OnInit} from '@angular/core';
+import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-model-fiche',
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModelFicheComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) {}
 
   ngOnInit() {
+
   }
 
+  openModal() {
+    this.dialog.open(ModelFicheModalComponent, {
+      data: {
+        animal: 'panda'
+      }
+    });
+  }
+}
+
+@Component({
+  selector: 'app-model-fiche-modal',
+  templateUrl: 'model-fiche-modal.html',
+})
+export class ModelFicheModalComponent {
+  constructor(@Inject(MAT_DIALOG_DATA) public data: any) {}
 }
