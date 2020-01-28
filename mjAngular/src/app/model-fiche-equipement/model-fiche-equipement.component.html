@@ -1,20 +1,26 @@
-<section>
-    <h3>Equipement</h3>
-    <mat-checkbox [(ngModel)]="checked"></mat-checkbox>
-</section>
-<section>
-    <form class="equipement-form">
-        <mat-form-field class="example-full-width">
-            <input type="text" matInput placeholder="Champ" value="label" />
-        </mat-form-field>
-        <mat-form-field>
-            <mat-label>type du champ</mat-label>
-            <mat-select [(value)]="selected">
-              <mat-option value="string">texte</mat-option>
-              <mat-option value="int">entier</mat-option>
-              <mat-option value="float">decimal</mat-option>
-            </mat-select>
-        </mat-form-field>
-        <button mat-flat-button color="primary">ajouter</button>
-    </form>
-</section>
+<mat-expansion-panel [disabled]="checked === false" [expanded]="checked === true">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Equipement
+      </mat-panel-title>
+      <mat-panel-description>
+        <mat-checkbox [(ngModel)]="checked"></mat-checkbox>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <section>
+        <form class="inventaire-form">
+            <mat-form-field class="example-full-width">
+                <input type="text" matInput placeholder="Champ" value="label" [(label)]="label"/>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>type du champ</mat-label>
+                <mat-select [(value)]="selected">
+                <mat-option value="string">texte</mat-option>
+                <mat-option value="int">entier</mat-option>
+                <mat-option value="float">decimal</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <button mat-flat-button color="primary">ajouter</button>
+        </form>
+    </section>
+</mat-expansion-panel>

@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class ModelFicheEquipementComponent implements OnInit {
 
   checked = true;
-
-  constructor() { }
+  selected = 'string';
+  label: string;
 
   ngOnInit() {
   }

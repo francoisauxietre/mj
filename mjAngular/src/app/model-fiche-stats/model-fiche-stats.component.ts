@@ -9,8 +9,7 @@ export class ModelFicheStatsComponent implements OnInit {
 
   checked = true;
   selected = 'string';
-
-  constructor() { }
+  label: string;
 
   ngOnInit() {
   }
