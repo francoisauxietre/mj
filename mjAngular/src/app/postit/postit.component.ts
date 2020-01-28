@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import {PostIt} from '../model/PostIt';
-import {NgbModal, NgbModalOptions} from '@ng-bootstrap/ng-bootstrap';
-import {ModalConfig} from '../config/modal-config';
-import {DraggableModalComponent} from '../modal/draggable-modal.component';
 import {CdkDragDrop, moveItemInArray} from '@angular/cdk/drag-drop';
 
 @Component({
@@ -13,22 +10,6 @@ import {CdkDragDrop, moveItemInArray} from '@angular/cdk/drag-drop';
 export class PostitComponent implements OnInit {
   postIts: PostIt[] = [];
   test: boolean;
-  buttonText = 'Open Modal';
-
-  modalRef: any;
-  modalOptions: NgbModalOptions = ModalConfig;
-
-  constructor(private modalService: NgbModal) {}
-
-  openModal() {
-    this.modalRef = this.modalService.open(DraggableModalComponent, this.modalOptions);
-    this.modalRef.componentInstance.title = 'Drag Me!';
-    this.modalRef.componentInstance.message = 'test blablablablablabla';
-    this.modalRef.componentInstance.onSubmitSubject
-      .subscribe((res: boolean) => {
-        this.buttonText = 'Open Post-it';
-      });
-  }
 
   ngOnInit() {
   }
@@ -50,14 +31,14 @@ export class PostitComponent implements OnInit {
   }
 
   onTextChange(postit: PostIt, event: any) {
-    let p = this.postIts.find((value) => {
+    const p = this.postIts.find((value) => {
       return value === postit;
     });
     p.text = event;
   }
 
   onTitleChange(postit: PostIt, event: any) {
-    let p = this.postIts.find((value) => {
+    const p = this.postIts.find((value) => {
       return value === postit;
     });
     p.title = event;
