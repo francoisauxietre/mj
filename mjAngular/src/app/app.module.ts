@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { TimeLineComponent } from './time-line/time-line.component';
 import { NavComponent } from './nav/nav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonToggleModule, MatFormFieldModule, MatInputModule, MatToolbarModule, MatButtonModule, MatExpansionModule, MatListModule } from '@angular/material';
+import { MatButtonToggleModule, MatFormFieldModule, MatInputModule, MatToolbarModule, MatButtonModule, MatExpansionModule, MatListModule, MatCardModule } from '@angular/material';
 import { CarteComponent } from './carte/carte.component';
 import { GenerateurComponent } from './generateur/generateur.component';
 import { ElementTimeLineComponent } from './element-time-line/element-time-line.component';
@@ -84,7 +84,8 @@ import { MatSelectModule } from '@angular/material';
     MatSelectModule,
     MatButtonModule,
     MatExpansionModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
     // MdToolbarModule,
     // MdTabsModule,
     // MdButtonModule,

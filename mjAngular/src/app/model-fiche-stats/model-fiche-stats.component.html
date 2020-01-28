@@ -24,12 +24,10 @@
     </form>
   </section>
   <section>
-    <mat-list cdkDropList role="list" (cdkDropListDropped)="drop($event)">
-      <mat-list-item role="listitem" cdkDrag *ngFor="let keyType of keyTypes">
-        <div>
-          <span>{{keyType.key}}</span><span>{{keyType.type}}</span>
-        </div>
-      </mat-list-item>
-    </mat-list>
+    <div cdkDropList (cdkDropListDropped)="drop($event)">
+      <mat-card cdkDrag *ngFor="let keyType of keyTypes">
+        <span>{{keyType.key}}</span><span>{{keyType.type}}</span>
+      </mat-card>
+    </div>
   </section>
 </mat-expansion-panel>

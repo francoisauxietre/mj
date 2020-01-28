@@ -10,17 +10,24 @@
     <section>
         <form class="inventaire-form">
             <mat-form-field class="example-full-width">
-                <input type="text" matInput placeholder="Champ" value="label" name="label" [(ngModel)]="label"/>
+                <input type="text" matInput placeholder="Nom" value="label" name="label" [(ngModel)]="label"/>
             </mat-form-field>
-            <mat-form-field>
-                <mat-label>type du champ</mat-label>
-                <mat-select [(value)]="selected">
-                <mat-option value="string">texte</mat-option>
-                <mat-option value="int">entier</mat-option>
-                <mat-option value="float">decimal</mat-option>
-                </mat-select>
+            <mat-form-field class="example-full-width">
+              <input type="number" matInput placeholder="nb" value="nb" name="nb" [(ngModel)]="nb"/>
             </mat-form-field>
+            <mat-form-field class="example-full-width">
+              <input type="text" matInput placeholder="description" value="desc" name="desc" [(ngModel)]="desc"/>
+            </mat-form-field>
+            
             <button mat-flat-button color="primary" (click)="ajouter()">ajouter</button>
         </form>
+    </section>
+    <section>
+      <div cdkDropList (cdkDropListDropped)="drop($event)">
+        <mat-card cdkDrag *ngFor="let item of inventaire">
+          <span>{{item.nb}}</span><span>{{item.nom}}</span>
+          <mat-card-content>{{item.desc}}</mat-card-content>
+        </mat-card>
+      </div>
     </section>
 </mat-expansion-panel>

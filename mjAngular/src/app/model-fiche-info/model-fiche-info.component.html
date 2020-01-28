@@ -1,26 +1,29 @@
 <mat-expansion-panel [disabled]="checked === false" [expanded]="checked === true">
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        Nom Prenom
-      </mat-panel-title>
-      <mat-panel-description>
-        <mat-checkbox [(ngModel)]="checked"></mat-checkbox>
-      </mat-panel-description>
-    </mat-expansion-panel-header>
-    <section>
-      <form class="inventaire-form">
-          <mat-form-field class="example-full-width">
-              <input type="text" matInput placeholder="Champ" value="label" name="label" [(ngModel)]="label"/>
-          </mat-form-field>
-          <mat-form-field>
-              <mat-label>type du champ</mat-label>
-              <mat-select [(value)]="selected">
-              <mat-option value="string">texte</mat-option>
-              <mat-option value="int">entier</mat-option>
-              <mat-option value="float">decimal</mat-option>
-              </mat-select>
-          </mat-form-field>
-          <button mat-flat-button color="primary" (click)="ajouter()">ajouter</button>
-      </form>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Nom Prenom
+    </mat-panel-title>
+    <mat-panel-description>
+      <mat-checkbox [(ngModel)]="checked"></mat-checkbox>
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+  <section>
+    <form class="inventaire-form">
+        <mat-form-field class="example-full-width">
+            <input type="text" matInput placeholder="Champ" value="label" name="label" [(ngModel)]="label"/>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <input type="text" matInput placeholder="Valeur" value="valeur" name="valeur" [(ngModel)]="valeur"/>
+        </mat-form-field>
+        
+        <button mat-flat-button color="primary" (click)="ajouter()">ajouter</button>
+    </form>
+  </section>
+  <section>
+    <div cdkDropList (cdkDropListDropped)="drop($event)">
+      <mat-card cdkDrag *ngFor="let keyValue of keyValues">
+        <span>{{keyValue.key}}</span><span>{{keyValue.value}}</span>
+      </mat-card>
+    </div>
   </section>
 </mat-expansion-panel>
