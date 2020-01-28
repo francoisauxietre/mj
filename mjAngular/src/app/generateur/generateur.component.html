@@ -1,6 +1,6 @@
 <div>
   <input id="dice_generator" name="nbDe" type="number" min="1" [(ngModel)]="nbDe" />D
-  <select [(ngModel)]="selectDe" name="selectDe" >
+  <select [(ngModel)]="selectDe" name="selectDe">
     <option *ngFor="let de of listDe">{{de}}</option>
   </select>
   <button (click)="onSubmit()">Lancer</button>

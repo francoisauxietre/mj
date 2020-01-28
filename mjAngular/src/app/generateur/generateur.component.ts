@@ -13,7 +13,7 @@ import { Component, OnInit } from '@angular/core';
 
 export class GenerateurComponent implements OnInit {
 
-  listDe = [4,6,8,10,12,20,100];
+  listDe = [4,6,8,10,12,20,100,"Autre"];
   total: number;
   selectDe: number;
   nbDe: number = 1;
@@ -32,6 +32,8 @@ export class GenerateurComponent implements OnInit {
     this.listValue ="";
     this.listValueSorted = [];
     if(this.nbDe!=null && this.selectDe!=null){
+      if(!isNaN(this.selectDe)){
+        
       let i = this.nbDe;
       this.total = 0;
       this.listValue = "";
@@ -43,9 +45,16 @@ export class GenerateurComponent implements OnInit {
       }
       this.listValueSorted.sort(function (a,b) { return a-b; });
       this.listValueSorted.forEach(element => this.listValue += "[" + element.toString() + "] ");
+    }
+      else {
+        var number=window.prompt("Entrez une valeur de dé personnalisée:");
+        this.listDe.pop();
+        this.listDe.push(number);
+        this.listDe.push("Autre")
+      }
+
     } else {
       window.alert("Veuillez choisir une taille de dé");
-      //TODO Message d'erreur
     }
 
   }
