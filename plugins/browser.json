@@ -18,6 +18,9 @@
     },
     "cordova-plugin-file": {
       "PACKAGE_NAME": "com.froxworld.mj"
+    },
+    "cordova-plugin-media": {
+      "PACKAGE_NAME": "com.froxworld.mj"
     }
   },
   "dependent_plugins": {}

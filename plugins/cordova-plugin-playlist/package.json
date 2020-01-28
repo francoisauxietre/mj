@@ -1,0 +1,119 @@
+{
+  "_from": "cordova-plugin-playlist@0.10.0",
+  "_id": "cordova-plugin-playlist@0.10.0",
+  "_inBundle": false,
+  "_integrity": "sha512-DEGVXnCNdeGpo6wWHx++1ILN2MqcXGMT6ObSRxq0F+ung/gRYfduB36GoX4m7ADwhzoslCBGNEWwRipAP17XBA==",
+  "_location": "/cordova-plugin-playlist",
+  "_phantomChildren": {
+    "graceful-fs": "4.2.3",
+    "jsonfile": "4.0.0",
+    "universalify": "0.1.2"
+  },
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "cordova-plugin-playlist@0.10.0",
+    "name": "cordova-plugin-playlist",
+    "escapedName": "cordova-plugin-playlist",
+    "rawSpec": "0.10.0",
+    "saveSpec": null,
+    "fetchSpec": "0.10.0"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-playlist/-/cordova-plugin-playlist-0.10.0.tgz",
+  "_shasum": "c1ac003a4d6a0b65565e2dd530a21daf90667743",
+  "_spec": "cordova-plugin-playlist@0.10.0",
+  "_where": "/home/clippold/git/mj",
+  "author": {
+    "name": "Patrick",
+    "email": "patrick@rolamix.com"
+  },
+  "browserslist": "ios_saf >= 9.3, chrome >= 49",
+  "bugs": {
+    "url": "https://github.com/Rolamix/cordova-plugin-playlist/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-playlist",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "dependencies": {
+    "fs-extra": "^5.0.0",
+    "q": "^1.5.1",
+    "semver": "^5.5.0",
+    "xml2js": "^0.4.19"
+  },
+  "deprecated": false,
+  "description": "A Cordova plugin for Android and iOS with native support for audio playlists, background support, and lock screen controls",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.42",
+    "@babel/core": "^7.0.0-beta.42",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.44",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.44",
+    "@babel/preset-env": "^7.0.0-beta.42",
+    "@babel/preset-typescript": "^7.0.0-beta.44",
+    "@types/semver": "^5.5.0",
+    "babel-eslint": "^8.2.2",
+    "babel-plugin-add-header-comment": "^1.0.3",
+    "babel-plugin-transform-es2015-template-literals": "^6.22.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "jasmine-node": "^1.14.5",
+    "nodemon": "^1.17.2",
+    "pluginpub": "^0.0.9",
+    "typescript": "^2.8.1"
+  },
+  "engines": {
+    "cordovaDependencies": {
+      "0.5.0": {
+        "cordova": ">=7.1.0",
+        "cordova-android": ">=7.1.0",
+        "cordova-ios": ">=4.3.0"
+      }
+    }
+  },
+  "homepage": "https://github.com/Rolamix/cordova-plugin-playlist#readme",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android",
+    "cordova",
+    "android",
+    "ios",
+    "audio",
+    "player",
+    "playlist",
+    "avqueueplayer",
+    "exomedia",
+    "native",
+    "audio",
+    "background",
+    "audio",
+    "lock",
+    "screen",
+    "controls"
+  ],
+  "license": "MIT",
+  "main": "./www/index.js",
+  "name": "cordova-plugin-playlist",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rolamix/cordova-plugin-playlist.git"
+  },
+  "scripts": {
+    "build": "npm run lint && npx browserslist && tsc --emitDeclarationOnly && babel src/js --out-dir www --extensions \".ts,.tsx\"",
+    "build:watch": "nodemon -w ./src/js -e js -x npm run build",
+    "lint": "eslint src/js",
+    "precommit-msg": "echo 'Pre-commit checks... make sure you built!!' && exit 0",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "types": "./www/index.d.ts",
+  "version": "0.10.0"
+}

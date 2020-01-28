@@ -213,12 +213,45 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
         "cordova"
       ],
       "runs": true
+    },
+    {
+      "id": "cordova-plugin-playlist.AudioPlayer",
+      "file": "plugins/cordova-plugin-playlist/www/RmxAudioPlayer.js",
+      "pluginId": "cordova-plugin-playlist",
+      "clobbers": [
+        "window.plugins.AudioPlayer"
+      ]
+    },
+    {
+      "id": "cordova-plugin-playlist.Constants",
+      "file": "plugins/cordova-plugin-playlist/www/Constants.js",
+      "pluginId": "cordova-plugin-playlist",
+      "runs": true
+    },
+    {
+      "id": "cordova-plugin-media.MediaError",
+      "file": "plugins/cordova-plugin-media/www/MediaError.js",
+      "pluginId": "cordova-plugin-media",
+      "clobbers": [
+        "window.MediaError"
+      ]
+    },
+    {
+      "id": "cordova-plugin-media.Media",
+      "file": "plugins/cordova-plugin-media/www/Media.js",
+      "pluginId": "cordova-plugin-media",
+      "clobbers": [
+        "window.Media"
+      ]
     }
   ];
   module.exports.metadata = {
     "cordova-plugin-whitelist": "1.3.4",
     "cordova-plugin-inappbrowser": "3.2.0",
     "cordova-plugin-camera": "4.1.0",
-    "cordova-plugin-file": "6.0.2"
+    "cordova-plugin-file": "6.0.2",
+    "cordova-support-google-services": "1.2.1",
+    "cordova-plugin-playlist": "0.9.2",
+    "cordova-plugin-media": "5.0.3"
   };
 });

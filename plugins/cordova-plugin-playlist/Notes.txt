@@ -1,0 +1,33 @@
+Using cordova to extract the resources instead of using R:
+https://stackoverflow.com/questions/35511791/adding-drawable-resource-using-cordova#35557064
+https://ourcodeworld.com/articles/read/368/how-to-add-and-retrieve-a-resource-string-in-a-cordova-plugin-for-android
+https://stackoverflow.com/questions/26116955/cordova-plugin-android-activity-accessing-resources
+
+
+Integrate this library for iOS caching:
+https://github.com/vitoziv/VIMediaCache
+Derived from:
+https://gist.github.com/anonymous/83a93746d1ea52e9d23f
+Source article:
+http://vombat.tumblr.com/post/86294492874/caching-audio-streamed-using-avplayer
+
+Other implementations:
+https://medium.com/@vdugnist/how-to-cache-avurlasset-data-downloaded-by-avplayer-5400677b8b9e
+https://github.com/vdugnist/DVAssetLoaderDelegate
+
+Consuming apps might need:
+android {
+  compileOptions {
+          sourceCompatibility JavaVersion.VERSION_1_8
+          targetCompatibility JavaVersion.VERSION_1_8
+  }
+}
+I mean, this build gradle might need it too..
+
+
+This is another way to fix that icon issue:
+actually we could do this, instead of hardcoding the value. but meh.
+https://github.com/oliviercherrier/mauron85-background-geolocation-example-ionic2
+https://github.com/mauron85/cordova-plugin-background-geolocation/issues/553
+https://github.com/apache/cordova-android/issues/678
+but not ideal

@@ -1,7 +1,8 @@
 .bottom {
   position: fixed;
   bottom: 0;
-
+  background-color: grey;
+  padding-top: 0.5%;
 }
 
 .bottom-1 {
@@ -28,9 +29,11 @@
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: #7e7962;
 }
-
+.music{
+  background-color:#275f74;
+  padding:5%;
+}
 .center {
   width: 70%;
   margin-left: 15%;
