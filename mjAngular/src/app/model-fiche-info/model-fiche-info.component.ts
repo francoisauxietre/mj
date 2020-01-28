@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModelFicheInfoComponent implements OnInit {
 
+  checked = true;
+
   constructor() { }
 
   ngOnInit() {

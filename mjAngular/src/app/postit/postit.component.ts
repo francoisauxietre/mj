@@ -43,7 +43,7 @@ export class PostitComponent implements OnInit {
     this.test = true;
   }
 
-  removePostButton(postit: PostIt, event: any) {
+  removePostButton(postit: PostIt) {
     this.postIts = this.postIts.filter((value) => {
       return value !== postit;
     });
@@ -61,7 +61,6 @@ export class PostitComponent implements OnInit {
       return value === postit;
     });
     p.title = event;
-    //console.log(p, p.title);
   }
 
   drop(event: CdkDragDrop<string[]>) {

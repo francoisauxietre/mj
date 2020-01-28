@@ -8,6 +8,8 @@ import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
 })
 export class ModelFicheComponent implements OnInit {
 
+
+
   constructor(public dialog: MatDialog) {}
 
   ngOnInit() {

@@ -11,7 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { TimeLineComponent } from './time-line/time-line.component';
 import { NavComponent } from './nav/nav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonToggleModule, MatFormFieldModule, MatInputModule, MatToolbarModule } from '@angular/material';
+import { MatButtonToggleModule, MatFormFieldModule, MatInputModule, MatToolbarModule, MatButtonModule } from '@angular/material';
 import { CarteComponent } from './carte/carte.component';
 import { GenerateurComponent } from './generateur/generateur.component';
 import { ElementTimeLineComponent } from './element-time-line/element-time-line.component';
@@ -32,6 +32,8 @@ import { ModelFicheInventaireComponent } from './model-fiche-inventaire/model-fi
 
 import { MatDialogModule } from '@angular/material';
 import { MatCheckboxModule } from '@angular/material';
+import { MatSelectModule } from '@angular/material';
+
 // import {
 //   // MdToolbarModule,
 //   // MdTabsModule,
@@ -80,7 +82,9 @@ import { MatCheckboxModule } from '@angular/material';
     MatFormFieldModule,
     MatInputModule,
     MatDialogModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatSelectModule,
+    MatButtonModule
     // MdToolbarModule,
     // MdTabsModule,
     // MdButtonModule,

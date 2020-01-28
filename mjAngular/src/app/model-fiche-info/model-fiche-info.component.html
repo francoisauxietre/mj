@@ -1,5 +1,21 @@
 <section>
     <h3>Nom Prenom</h3>
-    <mat-checkbox></mat-checkbox>
+    <mat-checkbox [(ngModel)]="checked"></mat-checkbox>
     <p>blabla</p>
+</section>
+<section>
+    <form class="infos-form">
+        <mat-form-field class="example-full-width">
+            <input type="text" matInput placeholder="Champ" value="label" />
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>type du champ</mat-label>
+            <mat-select [(value)]="selected">
+              <mat-option value="string">texte</mat-option>
+              <mat-option value="int">entier</mat-option>
+              <mat-option value="float">decimal</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <button mat-flat-button color="primary">ajouter</button>
+    </form>
 </section>

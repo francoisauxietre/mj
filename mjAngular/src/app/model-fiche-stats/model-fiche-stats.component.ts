@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModelFicheStatsComponent implements OnInit {
 
+  checked = true;
+  selected = 'string';
+
   constructor() { }
 
   ngOnInit() {
