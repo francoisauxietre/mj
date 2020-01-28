@@ -1,1 +1,4 @@
+<select name="selectDe" (change)="changeImage($event.target.value)">
+  <option *ngFor="let carte of listeCarte" [value]="carte.value">{{carte.name}}</option>
+</select>
 <img [src]="cheminImage" alt="carte a afficher"/>
