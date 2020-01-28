@@ -14,4 +14,8 @@ export class ModelFicheEquipementComponent implements OnInit {
   ngOnInit() {
   }
 
+  ajouter() {
+
+  }
+
 }

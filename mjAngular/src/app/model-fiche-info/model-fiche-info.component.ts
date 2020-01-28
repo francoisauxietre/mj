@@ -14,4 +14,8 @@ export class ModelFicheInfoComponent implements OnInit {
   ngOnInit() {
   }
 
+  ajouter() {
+
+  }
+
 }

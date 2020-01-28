@@ -14,4 +14,8 @@ export class ModelFicheInventaireComponent implements OnInit {
   ngOnInit() {
   }
 
+  ajouter() {
+
+  }
+
 }

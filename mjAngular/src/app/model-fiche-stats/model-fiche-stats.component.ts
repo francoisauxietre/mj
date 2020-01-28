@@ -14,4 +14,8 @@ export class ModelFicheStatsComponent implements OnInit {
   ngOnInit() {
   }
 
+  ajouter() {
+
+  }
+
 }
