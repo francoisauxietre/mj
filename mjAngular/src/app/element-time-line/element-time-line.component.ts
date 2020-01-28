@@ -40,14 +40,21 @@ export class ElementTimeLineComponent implements OnInit {
 
   addSubTask() {
     this.showTask = true;
-    this.courantId++;
     const subTask: SubTask = new SubTask();
-    subTask.description = 'ets';
+    subTask.description = '';
     subTask.id = this.courantId;
     subTask.show = true;
     this.subTasks.push(subTask);
+    this.courantId++;
   }
+
   validateTask() {
     this.change = false;
+  }
+
+  removeTask(task: SubTask) {
+    console.log('bouton pushed');
+    this.subTasks.splice(task.id, 1);
+    delete this.subTasks[this.courantId];
   }
 }
