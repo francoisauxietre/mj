@@ -11,9 +11,9 @@ export class ModelFicheInventaireComponent implements OnInit {
 
   checked = true;
   selected = 'string';
-  label: string;
-  nb: number;
-  desc: string;
+  label = '';
+  nb = 0;
+  desc = '';
 
   inventaire: Item[] = [];
 
@@ -21,11 +21,19 @@ export class ModelFicheInventaireComponent implements OnInit {
   }
 
   ajouter() {
-    const tmp = new Item();
-    tmp.nom = this.label;
-    tmp.desc = this.desc;
-    tmp.nb = this.nb;
-    this.inventaire.push(tmp);
+    if ( this.label !== '' || this.desc !== '') {
+      const tmp = new Item();
+      tmp.nom = this.label;
+      tmp.desc = this.desc;
+      tmp.nb = this.nb;
+      this.inventaire.push(tmp);
+    }
+  }
+
+  removePostButton(item: Item) {
+    this.inventaire = this.inventaire.filter((value) => {
+      return value !== item;
+    });
   }
 
   drop(event: CdkDragDrop<string[]>) {

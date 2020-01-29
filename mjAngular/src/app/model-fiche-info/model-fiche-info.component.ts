@@ -10,8 +10,8 @@ import {CdkDragDrop, moveItemInArray} from '@angular/cdk/drag-drop';
 export class ModelFicheInfoComponent implements OnInit {
 
   checked = true;
-  valeur: string;
-  label: string;
+  valeur = '';
+  label = '';
 
   keyValues: KeyValue[] = [];
 
@@ -19,10 +19,18 @@ export class ModelFicheInfoComponent implements OnInit {
   }
 
   ajouter() {
-    const tmp = new KeyValue();
-    tmp.key = this.label;
-    tmp.value = this.valeur;
-    this.keyValues.push(tmp);
+    if ( this.valeur !== '' || this.label !== '') {
+      const tmp = new KeyValue();
+      tmp.key = this.label;
+      tmp.value = this.valeur;
+      this.keyValues.push(tmp);
+    }
+  }
+
+  removePostButton(keyValue: KeyValue) {
+    this.keyValues = this.keyValues.filter((value) => {
+      return value !== keyValue;
+    });
   }
 
   drop(event: CdkDragDrop<string[]>) {

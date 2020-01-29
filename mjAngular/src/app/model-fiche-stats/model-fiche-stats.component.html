@@ -23,10 +23,14 @@
         <button mat-flat-button color="primary" (click)="ajouter()">ajouter</button>
     </form>
   </section>
+  <mat-divider></mat-divider>
   <section>
     <div cdkDropList (cdkDropListDropped)="drop($event)">
       <mat-card cdkDrag *ngFor="let keyType of keyTypes">
         <span>{{keyType.key}}</span><span>{{keyType.type}}</span>
+        <mat-card-actions>
+          <button mat-button (click)="removePostButton(keyType)">X</button>
+        </mat-card-actions>
       </mat-card>
     </div>
   </section>

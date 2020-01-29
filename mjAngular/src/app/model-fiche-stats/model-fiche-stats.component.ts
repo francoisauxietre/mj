@@ -11,7 +11,7 @@ export class ModelFicheStatsComponent implements OnInit {
 
   checked = true;
   selected = 'string';
-  label: string;
+  label = '';
 
   keyTypes: KeyType[] = [];
 
@@ -19,10 +19,18 @@ export class ModelFicheStatsComponent implements OnInit {
   }
 
   ajouter() {
-    const tmp: KeyType = new KeyType();
-    tmp.key = this.label;
-    tmp.type = this.selected;
-    this.keyTypes.push(tmp);
+    if ( this.label !== '') {
+      const tmp: KeyType = new KeyType();
+      tmp.key = this.label;
+      tmp.type = this.selected;
+      this.keyTypes.push(tmp);
+    }
+  }
+
+  removePostButton(keyType: KeyType) {
+    this.keyTypes = this.keyTypes.filter((value) => {
+      return value !== keyType;
+    });
   }
 
   drop(event: CdkDragDrop<string[]>) {
