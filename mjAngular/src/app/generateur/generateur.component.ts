@@ -46,6 +46,7 @@ export class GenerateurComponent implements OnInit {
         } else {
           this.listDe.pop();
           this.listDe.push(num);
+          this.selectDe = num;
           this.listDe.push('Autre');
         }
       }
