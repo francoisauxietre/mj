@@ -47,6 +47,7 @@ export class GenerateurComponent implements OnInit {
           this.listDe.pop();
           this.listDe.push(num);
           this.selectDe = num;
+          this.listDe.sort((a, b) => a - b );
           this.listDe.push('Autre');
         }
       }
