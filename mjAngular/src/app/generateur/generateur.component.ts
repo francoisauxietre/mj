@@ -46,8 +46,9 @@ export class GenerateurComponent implements OnInit {
         } else {
           this.listDe.pop();
           this.listDe.push(num);
-          this.selectDe = num;
-          this.listDe.sort((a, b) => a - b );
+          // tslint:disable-next-line: radix
+          this.selectDe = parseInt(num);
+          this.listDe.sort((a: number, b: number) => a - b );
           this.listDe.push('Autre');
         }
       }
