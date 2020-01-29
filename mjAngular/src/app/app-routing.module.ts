@@ -6,12 +6,14 @@ import {PostitComponent} from './postit/postit.component';
 import {CarteComponent} from './carte/carte.component';
 import {GenerateurComponent} from './generateur/generateur.component';
 import { ModelFicheComponent } from './model-fiche/model-fiche.component';
+import { EyeComponent } from './eye/eye.component';
 
 const routes: Routes = [
   {path: 'timeLine', component: TimeLineComponent},
   {path: 'postIt', component: PostitComponent},
   {path: 'carte', component: CarteComponent},
-  {path: 'generateur', component: GenerateurComponent}
+  {path: 'generateur', component: GenerateurComponent},
+  {path: 'eye', component: EyeComponent}
   ];
 
 @NgModule({
