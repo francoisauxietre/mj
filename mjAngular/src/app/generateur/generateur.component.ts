@@ -10,7 +10,7 @@ export class GenerateurComponent implements OnInit {
 
   listDe = [4, 6, 8, 10, 12, 20, 100, 'Autre'];
   total: number;
-  selectDe: number;
+  selectDe = 6;
   nbDe = 1;
   listValue = '';
   listValueSorted = [];

@@ -1,10 +1,17 @@
-<div>
-  <input id="dice_generator" name="nbDe" type="number" min="1" [(ngModel)]="nbDe" />D
-  <select [(ngModel)]="selectDe" name="selectDe">
-    <option *ngFor="let de of listDe">{{de}}</option>
-  </select>
-  <button (click)="onSubmit()">Lancer</button>
-</div>
+<section>
+  <form>
+    <mat-form-field class="form-item">
+      <input matInput id="dice_generator" placeholder="nbDé" name="nbDe" type="number" min="1" [(ngModel)]="nbDe" />
+    </mat-form-field>
+    <mat-form-field class="form-item">
+      <mat-label>Dé</mat-label>
+      <select matNativeControl required [(ngModel)]="selectDe" name="selectDe">
+        <option *ngFor="let de of listDe">{{de}}</option>
+      </select>
+    </mat-form-field>
+    <button class="form-item" mat-flat-button (click)="onSubmit()">Lancer</button>
+  </form>
+</section>
 <div>
   <p id="list_values">{{listValue}}</p>
   <p id="total">={{total}}</p>
